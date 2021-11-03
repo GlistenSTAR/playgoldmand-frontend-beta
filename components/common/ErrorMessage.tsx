@@ -3,7 +3,7 @@ import Image from 'next/image'
 import cb from "classnames";
 
 
-function ErrorMessage(props) {
+function ErrorMessage(props: any) {
     const error = props['error'];
 
     return (

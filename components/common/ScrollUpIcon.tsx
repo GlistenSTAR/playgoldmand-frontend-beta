@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { MouseEventHandler } from 'react'
 import Image from 'next/image'
 import Button from './input/Button'
 import cb from 'classnames'
 
 export default function ScrollUpIcon(
-  { className, onClick}
-) {
+  { className, onClick} : {
+    className: string,
+    onClick: MouseEventHandler
+  }
+): JSX.Element {
   return (
     <Button 
         className={cb(

@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { MouseEventHandler } from 'react'
 import cb from 'classnames'
 
 export default function Button(
-  { children, className, disabled, onClick, id}
-) {
+  { children, className, disabled, onClick} : {
+    children: JSX.Element | JSX.Element[] | string,
+    className?: string,
+    disabled?: boolean,
+    onClick: MouseEventHandler
+  }
+): JSX.Element {
   return (
     <button
-      id={id}
       className={cb(
         'focus:outline-none focus-visible:ring-1 focus-visible:ring-inset',
         'focus-visible:ring-primary',

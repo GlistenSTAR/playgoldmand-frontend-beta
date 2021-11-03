@@ -3,10 +3,14 @@ import cb from 'classnames'
 import NextLink from 'next/link'
 
 export default function Link(
-  { children, className, href, external }
-) {
+  { children, className, href, external } : {
+    children: JSX.Element | JSX.Element[]
+    className?: string,
+    href: string,
+    external?: boolean
+  }
+): JSX.Element {
   const linkClassNames = cb(
-    'block',
     'focus-visible:ring-1 focus-visible:ring-inset',
     'focus-visible:ring-primary',
     'cursor-pointer',
@@ -25,9 +29,9 @@ export default function Link(
     )
   return (
     <NextLink href={href} passHref>
-      <a className={linkClassNames}>
+      <div className={linkClassNames}>
         {children}
-      </a>
+      </div>
     </NextLink>
   )
 }
