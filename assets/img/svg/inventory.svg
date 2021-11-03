@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="33.2" viewBox="0 0 40 33.2">
+  <defs>
+    <filter id="Path" x="0" y="6.8" width="33.2" height="26.4" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.235"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path-2" x="6.8" y="0" width="33.2" height="26.4" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.235"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path)">
+    <path id="Path-3" data-name="Path" d="M5.1,11.05V0H2.55A2.55,2.55,0,0,0,0,2.55v15.3A2.55,2.55,0,0,0,2.55,20.4h22.1a2.55,2.55,0,0,0,2.55-2.55V15.3H9.35A4.255,4.255,0,0,1,5.1,11.05Z" transform="translate(3 7.8)" fill="#fff"/>
+  </g>
+  <g id="Group_1" data-name="Group 1" transform="translate(-35 -11)">
+    <g transform="matrix(1, 0, 0, 1, 35, 11)" filter="url(#Path-2)">
+      <path id="Path-4" data-name="Path" d="M24.65,3.4H14.45L11.05,0H2.55A2.55,2.55,0,0,0,0,2.55v15.3A2.55,2.55,0,0,0,2.55,20.4h22.1a2.55,2.55,0,0,0,2.55-2.55V5.95A2.55,2.55,0,0,0,24.65,3.4Z" transform="translate(9.8 1)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
