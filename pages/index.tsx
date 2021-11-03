@@ -30,7 +30,7 @@ const Home: NextPage = () => {
               cb('mt-3')
             }
           />
-          <button className="p-2 mt-14 w-64 border-2 border-green-500 rounded-full text-white">START PLAYING</button>
+          <button className="p-2 mt-14 mb-20 w-64 border-2 border-green-500 rounded-full text-white bg-black bg-opacity-25">START PLAYING</button>
           <SocialGroupIcon />
         </div>
     </div>
