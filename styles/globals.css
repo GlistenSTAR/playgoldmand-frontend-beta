@@ -16,3 +16,52 @@ body {
   height: 100vh;
   background-size: cover;
 }
+
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root{
+  color: white!important;
+  width: 35px!important;
+  height: 36px!important;
+}
+
+.css-117w1su-MuiStepIcon-text{
+  fill: #4DCF90!important;
+}
+
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed, .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active {
+  color: #4DCF90!important;
+  border: 2px solid white!important;
+  border-radius: 50%!important;
+}
+
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed .css-117w1su-MuiStepIcon-text,
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active .css-117w1su-MuiStepIcon-text{
+  fill: white!important;
+}
+
+.checkbox {
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox > input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  transition-duration: 0.3s;
+  background-color: white;
+}
+
+.checkbox > input:checked {
+  background-color: #FDBB17;
+}
+
+.checkbox > input:checked + p::before {
+  content: '\2713';
+  display: block;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.45rem;
+}

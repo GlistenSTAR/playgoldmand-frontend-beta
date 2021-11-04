@@ -2,14 +2,24 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 import cb from 'classnames';
 import SocialGroupIcon from '../components/socials/SocailGroupIcon'
+import { useRouter } from 'next/router'
 
 const Home: NextPage = () => {
+  const router = useRouter();
+
+  const goRegister = () =>{
+    router.push('/auth/register');
+  }
+
   return (
-    <div className={
-        cb('w-screen h-screen bg-cover bg-opacity-50', 
-           'flex justify-around')
-      }>
-        <div className="absolute h-screen flex flex-col items-center justify-center">
+    <div className={cb(
+        'w-screen h-screen opacity-100', 
+        'flex justify-around'
+      )}>
+        <div className={cb(
+            'absolute h-screen', 
+            'flex flex-col items-center justify-center'
+        )}>
           <Image 
             src={require('./../assets/img/logo_1.png')}
             width="311"
@@ -18,8 +28,8 @@ const Home: NextPage = () => {
           />
 
           <p className={cb(
-            'mt-20 mb-5 text-base text-white text-center')
-          }>Login With</p>
+            'mt-20 mb-5 text-base text-white text-center'
+          )}>Login With</p>
 
           <Image 
             src={require('./../assets/img/wax_sign.png')}
@@ -30,11 +40,14 @@ const Home: NextPage = () => {
               cb('mt-3')
             }
           />
-          <button className={
-            cb('p-2 mt-14 mb-20 w-64', 
-               'border-2 border-green-500 rounded-full', 
-               'text-white bg-black bg-opacity-25')
-          }>START PLAYING</button>
+          <button className={cb(
+              'p-2 mt-14 mb-20 w-64', 
+              'border-2 border-green-500 rounded-full', 
+              'text-white bg-black bg-opacity-25'
+            )}
+            onClick={()=>goRegister()}>
+            START PLAYING
+          </button>
           <SocialGroupIcon />
         </div>
     </div>
