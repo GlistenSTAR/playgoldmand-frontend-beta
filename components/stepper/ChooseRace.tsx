@@ -11,7 +11,8 @@ const ChooseRace = () => {
         'mt-10 text-white w-full'
       )}>
         <p className={cb(
-          'text-center text-yellow text-3xl uppercase'
+          'text-center text-yellow text-3xl uppercase',
+          'text-shadow'
         )}>Choose a race</p>
       </div>
       <div className={cb(
