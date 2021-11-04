@@ -49,7 +49,8 @@ body {
   -o-appearance: none;
   appearance: none;
   transition-duration: 0.3s;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid white
 }
 
 .checkbox > input:checked {

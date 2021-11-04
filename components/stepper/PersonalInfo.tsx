@@ -26,7 +26,7 @@ const PersonalInfo = () => {
             value={name} 
             required={true}
             className={cb(
-              'text-yellow bg-black bg-opacity-25 w-full mt-2'
+              'text-yellow bg-black bg-opacity-25 w-full mt-2 border-2 border-white'
             )}
           />
         </div>
@@ -40,7 +40,7 @@ const PersonalInfo = () => {
             value={email} 
             required={true}
             className={cb(
-              'text-yellow bg-black bg-opacity-25 w-full mt-2'
+              'text-yellow bg-black bg-opacity-25 w-full mt-2 border-2 border-white'
             )}
           />
         </div>
