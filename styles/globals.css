@@ -65,3 +65,11 @@ body {
   left: 0.5rem;
   top: 0.45rem;
 }
+
+.card_box:hover{
+  transform: scale(1.1);
+}
+
+.card_box:hover .description {
+  display: block;
+}

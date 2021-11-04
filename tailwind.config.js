@@ -5,11 +5,14 @@ module.exports = {
     extend: {
       backgroundImage:{
         'landscape':"url('./../assets/img/landscape.png')",
-        'logo_1':"url('./../assets/img/logo_1.png')"
+        'logo_1':"url('./../assets/img/logo_1.png')",
       },
       textColor:{
         'yellow':"#F68D38"
       },
+      backgroundColor:{
+        'item_box_color': 'rgba(255, 255, 255, 0.2)'
+      }
     },
   },
   variants: {

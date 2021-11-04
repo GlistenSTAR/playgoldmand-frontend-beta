@@ -11,7 +11,7 @@ const PersonalInfo = () => {
   return (
     <div className={cb('w-full')}>
       <div className={cb(
-        'mt-14 text-white w-full'
+        'mt-14 text-white w-full mb-10'
       )}>
         <p className={cb(
           'text-center text-yellow text-3xl uppercase'
@@ -24,7 +24,6 @@ const PersonalInfo = () => {
             type="text" 
             onChange={(e)=> setName(e.target.value)} 
             value={name} 
-            name="name" 
             required={true}
             className={cb(
               'text-yellow bg-black bg-opacity-25 w-full mt-2'
@@ -39,7 +38,6 @@ const PersonalInfo = () => {
             type="text" 
             onChange={(e)=> setEmail(e.target.value)} 
             value={email} 
-            name="email" 
             required={true}
             className={cb(
               'text-yellow bg-black bg-opacity-25 w-full mt-2'
@@ -52,7 +50,6 @@ const PersonalInfo = () => {
         )}>
           <Input 
             type="checkbox" 
-            name="check1" 
             className={cb(
               'text-yellow bg-black bg-opacity-25 mt-2 w-6 h-6'
             )}
@@ -61,13 +58,12 @@ const PersonalInfo = () => {
           />
           <p className="ml-3 uppercase">I am 18+ years of age</p>
         </div>
-        
+
         <div className={cb(
           'mt-2 flex row items-end checkbox'
         )}>
           <Input 
             type="checkbox" 
-            name="check2" 
             className={cb(
               'text-yellow bg-black bg-opacity-25 mt-2 w-6 h-6'
             )}

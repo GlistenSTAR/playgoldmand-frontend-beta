@@ -7,7 +7,7 @@ import cb from 'classnames'
 
 import Button from '../common/input/Button';
 import PersonalInfo from './PersonalInfo';
-import ChoosePlace from './ChoosePlace';
+import ChooseRace from './ChooseRace';
 import ChooseAvartar from './ChooseAvartar';
 
 const steps = ['', '', ''];
@@ -21,7 +21,7 @@ export default function HorizonStepper() {
 
   return (
     <Box sx={{ marginTop: '69px', display: 'flex', flexDirection:'column', alignItems:'center'}}>
-      <Stepper activeStep={activeStep} sx={{width: '90%'}}>
+      <Stepper activeStep={activeStep} sx={{ width: '320px'}}>
         {steps.map((label, index) => {
           const stepProps: { completed?: boolean } = {};
           const labelProps: {
@@ -41,7 +41,7 @@ export default function HorizonStepper() {
         <PersonalInfo />  
        ) : activeStep === 1 ? 
         (
-          <ChoosePlace />
+          <ChooseRace />
         ) :
         (
           <ChooseAvartar />
@@ -53,7 +53,7 @@ export default function HorizonStepper() {
           { activeStep === steps.length - 1 ? 
               (
                 <Button onClick={handleNext} className={cb(
-                  'p-2 mt-14 mb-20 w-64', 
+                  'p-2 mt-4 mb-20 w-64', 
                   'border-2 border-green-500 rounded-full', 
                   'text-white bg-black bg-opacity-25'
                 // eslint-disable-next-line react/no-unescaped-entities
@@ -62,7 +62,7 @@ export default function HorizonStepper() {
                 :
               (
                 <Button onClick={handleNext} className={cb(
-                  'p-2 mt-14 mb-20 w-64', 
+                  'p-2 mt-4 mb-20 w-64', 
                   'border-2 border-green-500 rounded-full', 
                   'text-white bg-black bg-opacity-25'
                 )}>NEXT STEP</Button>

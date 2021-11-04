@@ -2,7 +2,7 @@ import {useState} from 'react'
 import Image from 'next/image'
 import cb from 'classnames'
 
-const ChooseAvartar = () => {
+const ChooseRace = () => {
   const [show, setShow] = useState(false);
 
   return (
@@ -12,7 +12,7 @@ const ChooseAvartar = () => {
       )}>
         <p className={cb(
           'text-center text-yellow text-3xl uppercase'
-        )}>Choose a avatar</p>
+        )}>Choose a race</p>
       </div>
       <div className={cb(
         'flex row mt-14  text-center text-white'
@@ -28,7 +28,7 @@ const ChooseAvartar = () => {
             'hover:bg-green-400',
           )}>
             <Image 
-              src={require('../../assets/img/avartar.png')}
+              src={require('../../assets/img/race.png')}
               alt="item"
               width="268"
               height="359"
@@ -47,7 +47,7 @@ const ChooseAvartar = () => {
             'hover:bg-green-400',
           )}>
             <Image 
-              src={require('../../assets/img/avartar.png')}
+              src={require('../../assets/img/race.png')}
               alt="item"
               width="268"
               height="359"
@@ -66,26 +66,7 @@ const ChooseAvartar = () => {
             'hover:bg-green-400',
           )}>
             <Image 
-              src={require('../../assets/img/avartar.png')}
-              alt="item"
-              width="268"
-              height="359"
-            />
-          </div>
-          <p className="mt-2 text-lg uppercase">Venom's</p>
-        </div>
-        <div className={cb(
-            'card_box transition transform ease-in-out duration-300'
-          )} 
-          onMouseEnter={()=>setShow(true)}
-          onMouseLeave={()=>setShow(false)}
-        >
-          <div className={cb(
-            'p-2 bg-item_box_color rounded-lg mx-10',
-            'hover:bg-green-400',
-          )}>
-            <Image 
-              src={require('../../assets/img/avartar.png')}
+              src={require('../../assets/img/race.png')}
               alt="item"
               width="268"
               height="359"
@@ -95,7 +76,7 @@ const ChooseAvartar = () => {
         </div>
       </div>
 
-      <div className={cb('relative text-center text-white w-full mt-20 mb-4')}>
+      <div className={cb('relative text-center text-white mt-20 mb-4')}>
       {
         show?(
             <p className="description absolute left-0 bottom-0 px-20 sm:px-4">
@@ -108,4 +89,4 @@ const ChooseAvartar = () => {
   );
 }
 
-export default ChooseAvartar;
+export default ChooseRace;

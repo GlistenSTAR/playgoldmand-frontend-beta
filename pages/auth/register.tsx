@@ -21,7 +21,7 @@ const register = () => {
         />
         
         <HorizonStepper />
-
+        
         <SocialGroupIcon />
       </div>
   </div>
