@@ -98,7 +98,7 @@ const ChooseAvartar = () => {
       <div className={cb('relative text-center text-white w-full mt-20 mb-4')}>
       {
         show?(
-            <p className="description absolute left-0 bottom-0 w-full px-20 sm:px-4">
+            <p className="description absolute left-0 bottom-0 px-20 sm:px-4">
               Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
         ):''
