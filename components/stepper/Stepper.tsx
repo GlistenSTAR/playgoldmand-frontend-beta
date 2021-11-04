@@ -28,7 +28,7 @@ export default function HorizonStepper() {
   }
 
   return (
-    <Box sx={{ marginTop: '69px', display: 'flex', flexDirection:'column', alignItems:'center'}}>
+    <Box sx={{ marginTop: '40px', display: 'flex', flexDirection:'column', alignItems:'center'}}>
       <Stepper activeStep={activeStep} sx={{ width: '320px'}}>
         {steps.map((label, index) => {
           const stepProps: { completed?: boolean } = {};
@@ -57,7 +57,7 @@ export default function HorizonStepper() {
       }
       
       <React.Fragment>
-        <Box sx={{ display: 'flex',justifyContent:'center', pt: 2 }}>
+        <Box sx={{ display: 'flex',justifyContent:'center'}}>
           { activeStep === steps.length - 1 ? 
               (
                 <Button className={cb(
