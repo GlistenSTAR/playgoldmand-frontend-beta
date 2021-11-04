@@ -16,3 +16,24 @@ body {
   height: 100vh;
   background-size: cover;
 }
+
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root{
+  color: white;
+  width: 35px;
+  height: 36px;
+}
+
+.css-117w1su-MuiStepIcon-text{
+  fill: #4DCF90
+}
+
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed, .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active {
+  color: #4DCF90;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed .css-117w1su-MuiStepIcon-text,
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active .css-117w1su-MuiStepIcon-text{
+  fill: white
+}
