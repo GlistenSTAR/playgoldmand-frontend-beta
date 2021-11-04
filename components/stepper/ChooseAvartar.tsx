@@ -29,7 +29,7 @@ const ChooseAvartar = () => {
             'hover:bg-green-400',
           )}>
             <Image 
-              src={require('../../assets/img/avartar.png')}
+              src={require('../../assets/img/avartar.svg')}
               alt="item"
               width="268"
               height="359"
@@ -48,7 +48,7 @@ const ChooseAvartar = () => {
             'hover:bg-green-400',
           )}>
             <Image 
-              src={require('../../assets/img/avartar.png')}
+              src={require('../../assets/img/avartar.svg')}
               alt="item"
               width="268"
               height="359"
@@ -67,7 +67,7 @@ const ChooseAvartar = () => {
             'hover:bg-green-400',
           )}>
             <Image 
-              src={require('../../assets/img/avartar.png')}
+              src={require('../../assets/img/avartar.svg')}
               alt="item"
               width="268"
               height="359"
@@ -86,7 +86,7 @@ const ChooseAvartar = () => {
             'hover:bg-green-400',
           )}>
             <Image 
-              src={require('../../assets/img/avartar.png')}
+              src={require('../../assets/img/avartar.svg')}
               alt="item"
               width="268"
               height="359"

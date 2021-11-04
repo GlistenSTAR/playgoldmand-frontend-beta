@@ -29,9 +29,9 @@ export default function Link(
     )
   return (
     <NextLink href={href} passHref>
-      <div className={linkClassNames}>
+      <a className={linkClassNames}>
         {children}
-      </div>
+      </a>
     </NextLink>
   )
 }

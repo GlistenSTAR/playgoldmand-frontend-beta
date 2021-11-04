@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import cb from 'classnames'
 import Input from '../common/input/Input'
+import Link from '../common/input/Link';
 
 const PersonalInfo = () => {
   let [name, setName] = useState('');
@@ -71,7 +72,7 @@ const PersonalInfo = () => {
             checked={check2}
             onChange={(e)=> setCheck2(!check2)}
           />
-          <p className="ml-3 uppercase">I Agree to the Terms & Conditions</p>
+          <p className="ml-3 uppercase">I Agree to the <Link href="#" className="underline">Terms & Conditions</Link></p>
         </div>
       </div>
     </div>
