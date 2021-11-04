@@ -37,3 +37,31 @@ body {
 .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active .css-117w1su-MuiStepIcon-text{
   fill: white!important;
 }
+
+.checkbox {
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox > input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  transition-duration: 0.3s;
+  background-color: white;
+}
+
+.checkbox > input:checked {
+  background-color: #FDBB17;
+}
+
+.checkbox > input:checked + p::before {
+  content: '\2713';
+  display: block;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.45rem;
+}

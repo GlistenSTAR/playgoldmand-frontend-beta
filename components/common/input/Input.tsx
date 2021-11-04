@@ -21,9 +21,9 @@ export default function Input(
   return (
     <input
       className={cb(
-        'rounded-xl px-3 py-2',
+        'rounded px-3 py-2',
         'focus:outline-none focus-visible:ring-inset',
-        'focus-visible:ring-secondary',
+        'focus-visible:ring-primary',
         'text-neutral',
         { 'cursor-not-allowed': disabled },
         className
