@@ -9,15 +9,23 @@ import Button from '../common/input/Button';
 import PersonalInfo from './PersonalInfo';
 import ChooseRace from './ChooseRace';
 import ChooseAvartar from './ChooseAvartar';
+import { useRouter } from 'next/router'
+
 
 const steps = ['', '', ''];
 
 export default function HorizonStepper() {
   const [activeStep, setActiveStep] = React.useState(0);
 
+  const router = useRouter();
+
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
+
+  const toDashboard = () => {
+    router.push('/dashboard')
+  }
 
   return (
     <Box sx={{ marginTop: '69px', display: 'flex', flexDirection:'column', alignItems:'center'}}>
@@ -52,12 +60,14 @@ export default function HorizonStepper() {
         <Box sx={{ display: 'flex',justifyContent:'center', pt: 2 }}>
           { activeStep === steps.length - 1 ? 
               (
-                <Button onClick={handleNext} className={cb(
+                <Button className={cb(
                   'p-2 mt-4 mb-20 w-64', 
                   'border-2 border-green-500 rounded-full', 
                   'text-white bg-black bg-opacity-25'
-                // eslint-disable-next-line react/no-unescaped-entities
-                )}>I'M READY</Button>
+                  // eslint-disable-next-line react/no-unescaped-entities
+                  )}
+                  onClick = {() => toDashboard()}
+                >I&apos;M READY</Button>
               ) 
                 :
               (

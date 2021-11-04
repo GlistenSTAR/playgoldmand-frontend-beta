@@ -28,7 +28,7 @@ const Home: NextPage = () => {
           />
 
           <p className={cb(
-            'mt-20 mb-5 text-base text-white text-center'
+            'mt-20 mb-5 text-base text-white text-center italic'
           )}>Login With</p>
 
           <Image 
@@ -42,8 +42,8 @@ const Home: NextPage = () => {
           />
           <button className={cb(
               'p-2 mt-14 mb-20 w-64', 
-              'border-2 border-green-500 rounded-full', 
-              'text-white bg-black bg-opacity-25'
+              'border-2 border-green-500 rounded-full shadow-2xl', 
+              'text-white bg-black bg-opacity-50'
             )}
             onClick={()=>goRegister()}>
             START PLAYING
