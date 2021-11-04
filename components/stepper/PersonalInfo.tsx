@@ -14,7 +14,8 @@ const PersonalInfo = () => {
         'mt-14 text-white w-full mb-10'
       )}>
         <p className={cb(
-          'text-center text-yellow text-3xl uppercase'
+          'text-center text-yellow text-2xl uppercase',
+          'text-shadow'
         )}>Add personal information</p>
         <div className={cb(
           'mt-16'
