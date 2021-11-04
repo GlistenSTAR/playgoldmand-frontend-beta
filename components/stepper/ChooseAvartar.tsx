@@ -34,7 +34,7 @@ const ChooseAvartar = () => {
               height="359"
             />
           </div>
-          <p className="mt-2 text-lg">ALF'S</p>
+          <p className="mt-2 text-lg">ALF&apos;S</p>
         </div>
         <div className={cb(
             'card_box transition transform ease-in-out duration-300'
@@ -72,7 +72,7 @@ const ChooseAvartar = () => {
               height="359"
             />
           </div>
-          <p className="mt-2 text-lg uppercase">Venom's</p>
+          <p className="mt-2 text-lg uppercase">Venom&apos;s</p>
         </div>
         <div className={cb(
             'card_box transition transform ease-in-out duration-300'
@@ -91,7 +91,7 @@ const ChooseAvartar = () => {
               height="359"
             />
           </div>
-          <p className="mt-2 text-lg uppercase">Venom's</p>
+          <p className="mt-2 text-lg uppercase">Venom&apos;s</p>
         </div>
       </div>
 
@@ -99,7 +99,7 @@ const ChooseAvartar = () => {
       {
         show?(
             <p className="description absolute left-0 bottom-0 px-20 sm:px-4">
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
         ):''
       }
