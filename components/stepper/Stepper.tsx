@@ -56,6 +56,7 @@ export default function HorizonStepper() {
                   'p-2 mt-14 mb-20 w-64', 
                   'border-2 border-green-500 rounded-full', 
                   'text-white bg-black bg-opacity-25'
+                // eslint-disable-next-line react/no-unescaped-entities
                 )}>I'M READY</Button>
               ) 
                 :
