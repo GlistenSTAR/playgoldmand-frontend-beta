@@ -3,10 +3,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      backgroundImage:{
-        'landscape':"url('./../assets/img/landscape.png')",
-        'logo_1':"url('./../assets/img/logo_1.png')",
-      },
+      // backgroundImage:{
+      //   'landscape':"url('./../assets/img/landscape.svg')",
+      //   'logo_1':"url('./../assets/img/logo_1.svg')",
+      // },
       textColor:{
         'yellow':"#F68D38"
       },

@@ -21,7 +21,7 @@ const Home: NextPage = () => {
             'flex flex-col items-center justify-center'
         )}>
           <Image 
-            src={require('./../assets/img/logo_1.png')}
+            src={require('./../assets/img/logo_1.svg')}
             width="311"
             height="174"
             alt="logo"
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
           )}>Login With</p>
 
           <Image 
-            src={require('./../assets/img/wax_sign.png')}
+            src={require('./../assets/img/wax_sign.svg')}
             alt="wax_sign"
             width="220"
             height="67"
