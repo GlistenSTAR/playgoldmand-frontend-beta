@@ -72,7 +72,7 @@ const PersonalInfo = () => {
             checked={check2}
             onChange={(e)=> setCheck2(!check2)}
           />
-          <p className="ml-3 uppercase">I Agree to the <Link href="#" className="underline">Terms & Conditions</Link></p>
+          <p className="ml-3 uppercase">I Agree to the <Link href="#" className="underline">Terms &amp;Conditions</Link></p>
         </div>
       </div>
     </div>

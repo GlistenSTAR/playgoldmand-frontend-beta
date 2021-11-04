@@ -14,7 +14,7 @@ const register = () => {
         'items-center justify-center'
       )}>
         <Image 
-          src={require(`./../../assets/img/logo-left.svg`)}
+          src={require(`./../../assets/img/logo-left.png`)}
           width="333"
           height="70"
           alt="logo"

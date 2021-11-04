@@ -29,7 +29,7 @@ const ChooseRace = () => {
             'hover:bg-green-400',
           )}>
             <Image 
-              src={require('../../assets/img/race.svg')}
+              src={require('../../assets/img/race.png')}
               alt="item"
               width="268"
               height="359"
@@ -48,7 +48,7 @@ const ChooseRace = () => {
             'hover:bg-green-400',
           )}>
             <Image 
-              src={require('../../assets/img/race.svg')}
+              src={require('../../assets/img/race.png')}
               alt="item"
               width="268"
               height="359"
@@ -67,7 +67,7 @@ const ChooseRace = () => {
             'hover:bg-green-400',
           )}>
             <Image 
-              src={require('../../assets/img/race.svg')}
+              src={require('../../assets/img/race.png')}
               alt="item"
               width="268"
               height="359"
