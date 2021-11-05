@@ -20,8 +20,8 @@ export default function MenuItem(
       <Link href={href} className="opacity-100 flex items-center">
           <Image 
               src={require(`../../assets/img/svg/${imageUrl}`)}
-              width="40"
-              height="40"
+              width="35"
+              height="35"
               alt="menu_icon"
             />
             <div className="ml-1">
