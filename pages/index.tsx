@@ -3,6 +3,7 @@ import Image from 'next/image'
 import cb from 'classnames';
 import SocialGroupIcon from '../components/socials/SocailGroupIcon'
 import { useRouter } from 'next/router'
+import Button from '../components/common/input/Button';
 
 const Home: NextPage = () => {
   const router = useRouter();
@@ -40,14 +41,14 @@ const Home: NextPage = () => {
               cb('mt-3')
             }
           />
-          <button className={cb(
+          <Button className={cb(
               'p-2 mt-14 mb-20 w-64', 
-              'border-2 border-green-500 rounded-full shadow-2xl', 
-              'text-white bg-black bg-opacity-50'
+              'border-4 border-green-500 rounded-full shadow-2xl', 
+              'text-white text-lg bg-black bg-opacity-50'
             )}
             onClick={()=>goRegister()}>
             START PLAYING
-          </button>
+          </Button>
           <SocialGroupIcon />
         </div>
     </div>

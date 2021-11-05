@@ -62,8 +62,8 @@ export default function HorizonStepper() {
               (
                 <Button className={cb(
                   'p-2 mt-4 mb-20 w-64', 
-                  'border-2 border-green-500 rounded-full', 
-                  'text-white bg-black bg-opacity-25'
+                  'border-4 border-green-500 rounded-full', 
+                  'text-white text-lg bg-black bg-opacity-50'
                   // eslint-disable-next-line react/no-unescaped-entities
                   )}
                   onClick = {() => toDashboard()}
@@ -73,8 +73,8 @@ export default function HorizonStepper() {
               (
                 <Button onClick={handleNext} className={cb(
                   'p-2 mt-4 mb-20 w-64', 
-                  'border-2 border-green-500 rounded-full', 
-                  'text-white bg-black bg-opacity-25'
+                  'border-4 border-green-500 rounded-full shadow-2xl', 
+                  'text-white text-lg bg-black bg-opacity-50'
                 )}>NEXT STEP</Button>
               ) 
           }
