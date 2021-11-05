@@ -4,23 +4,23 @@ import MenuItem from './menu-item';
 const links = [{
   text: 'Inventory',
   href: '/',
-  imageUrl: 'inventory.svg',
+  imageUrl: 'inventory.png',
 }, {
   text: 'Land',
   href: '/',
-  imageUrl: 'land.svg',
+  imageUrl: 'land.png',
 }, {
   text: 'Mining Hub',
   href: '/',
-  imageUrl: 'mining-hub.svg',
+  imageUrl: 'mining-hub.png',
 }, {
   text: 'My Business',
   href: '/',
-  imageUrl: 'my-business.svg',
+  imageUrl: 'my-business.png',
 }, {
   text: 'Laboratory',
   href: '/',
-  imageUrl: 'laboratory.svg',
+  imageUrl: 'laboratory.png',
 }]
 
 const Menu = () => {
