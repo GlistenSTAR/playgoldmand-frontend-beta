@@ -91,3 +91,7 @@ body {
 .card_box:hover .description {
   display: block;
 }
+
+.status_avatar img{
+  padding-top: 6px!important
+}
