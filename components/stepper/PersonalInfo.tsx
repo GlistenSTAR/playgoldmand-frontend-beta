@@ -16,7 +16,7 @@ const PersonalInfo = () => {
       )}>
         <p className={cb(
           'text-center text-yellow text-2xl uppercase',
-          'text-shadow'
+          'text-shadow font-bold'
         )}>Add personal information</p>
         <div className={cb(
           'mt-16'
@@ -53,7 +53,8 @@ const PersonalInfo = () => {
           <Input 
             type="checkbox" 
             className={cb(
-              'text-yellow bg-black bg-opacity-25 mt-2 w-6 h-6'
+              'text-yellow bg-black bg-opacity-25 mt-2 w-6 h-6',
+              'outline-white',
             )}
             checked={check1}
             onChange={(e)=> setCheck1(!check1)}
@@ -67,12 +68,13 @@ const PersonalInfo = () => {
           <Input 
             type="checkbox" 
             className={cb(
-              'text-yellow bg-black bg-opacity-25 mt-2 w-6 h-6'
+              'text-yellow bg-black bg-opacity-25 mt-2 w-6 h-6',
+              'outline-white',
             )}
             checked={check2}
             onChange={(e)=> setCheck2(!check2)}
           />
-          <p className="ml-3 uppercase">I Agree to the <Link href="#" className="underline">Terms &amp;Conditions</Link></p>
+          <p className="ml-3 uppercase">I Agree to the <Link href="#" className="underline">Terms &amp; Conditions</Link></p>
         </div>
       </div>
     </div>

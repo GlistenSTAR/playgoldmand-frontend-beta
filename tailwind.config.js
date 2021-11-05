@@ -12,6 +12,9 @@ module.exports = {
       },
       backgroundColor:{
         'item_box_color': 'rgba(255, 255, 255, 0.2)'
+      },
+      outline: {
+        white: '2px solid #ffffff',
       }
     },
   },

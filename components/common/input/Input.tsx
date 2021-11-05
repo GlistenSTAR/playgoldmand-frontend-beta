@@ -2,8 +2,9 @@ import React from 'react'
 import cb from 'classnames'
 
 export default function Input(
-  { type, value, className, placeholder, checked, required, disabled, onChange : onChangeCallback} : {
+  { type, id, value, className, placeholder, checked, required, disabled, onChange : onChangeCallback} : {
     type?: string,
+    id?: string,
     value?: string,
     className?: string,
     placeholder?: string,
@@ -29,6 +30,7 @@ export default function Input(
         className
       )}
       type={type}
+      id={id}
       value={value}
       placeholder={placeholder}
       checked={checked}
