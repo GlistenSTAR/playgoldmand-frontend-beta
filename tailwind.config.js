@@ -3,19 +3,19 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      // backgroundImage:{
-      //   'landscape':"url('./../assets/img/landscape.svg')",
-      //   'logo_1':"url('./../assets/img/logo_1.svg')",
-      // },
+      backgroundImage:{
+        'mark_button':"url('./../assets/img/button_mask_1.png')",
+      },
       textColor:{
         'yellow':"#F68D38"
       },
       backgroundColor:{
-        'item_box_color': 'rgba(255, 255, 255, 0.2)'
+        'item_box_color': 'rgba(255, 255, 255, 0.2)',
+        'inactive_button': 'rgb(15 103 150 / 80%);'
       },
       outline: {
         white: '2px solid #ffffff',
-      }
+      },
     },
   },
   variants: {
