@@ -15,6 +15,7 @@ export default function MenuItem(
       'flex justify-center items-center',
       'w-52 rounded-md',
       'px-5 py-1 border-4 text-white text-lg',
+      'bg-mark_button cover bg-inactive_button'
     )}>
       <Link href={href} className="opacity-100 flex items-center">
           <Image 
