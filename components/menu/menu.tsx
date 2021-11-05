@@ -3,23 +3,23 @@ import MenuItem from './menu-item';
 
 const links = [{
   text: 'Inventory',
-  href: '/',
+  href: '#inventory',
   imageUrl: 'inventory.png',
 }, {
   text: 'Land',
-  href: '/',
+  href: '#land',
   imageUrl: 'land.png',
 }, {
   text: 'Mining Hub',
-  href: '/',
+  href: '#mining',
   imageUrl: 'mining-hub.png',
 }, {
   text: 'My Business',
-  href: '/',
+  href: '#busniess',
   imageUrl: 'my-business.png',
 }, {
   text: 'Laboratory',
-  href: '/',
+  href: '#laboratory',
   imageUrl: 'laboratory.png',
 }]
 

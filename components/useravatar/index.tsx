@@ -39,7 +39,7 @@ const index = () => {
           'bg-mark_button cover bg-inactive_button',
           'text-center text-white', 
           'rounded border-white border-2',
-          'flex items-center justify-center'
+          'flex block md:block sm:hidden items-center justify-center',
         )}>
           <span>Bastum</span>
         </div>

@@ -4,7 +4,7 @@ import cb from 'classnames'
 const index = () => {
   return (
     <div className={cb(
-      'flex column item-center pr-10'
+      'flex item-center pr-10'
     )}>
       <div className={cb(
         'flex row',
