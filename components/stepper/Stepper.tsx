@@ -72,7 +72,7 @@ export default function HorizonStepper() {
                 :
               (
                 <Button onClick={handleNext} className={cb(
-                  'p-2 mt-4 mb-20 w-64', 
+                  'p-2 mt-2 md:mt-auto mb-10 md:mb-20 w-64', 
                   'border-4 border-green-500 rounded-full shadow-2xl', 
                   'text-white text-lg bg-black bg-opacity-50'
                 )}>NEXT STEP</Button>

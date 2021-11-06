@@ -12,14 +12,14 @@ const PersonalInfo = () => {
   return (
     <div className={cb('w-full')}>
       <div className={cb(
-        'mt-14 text-white w-full mb-10'
+        'mt-4 md:mt-14 text-white w-full mb-10'
       )}>
         <p className={cb(
           'text-center text-yellow text-2xl uppercase',
           'text-shadow font-bold'
         )}>Add personal information</p>
         <div className={cb(
-          'mt-16'
+          'mt-4 md:mt-16'
         )}>
           <p>USERNAME</p>
           <Input 
@@ -33,7 +33,7 @@ const PersonalInfo = () => {
           />
         </div>
         <div className={cb(
-          'mt-8'
+          'mt-2 md:mt-8'
         )}>
           <p>EMAIL</p>
           <Input 
