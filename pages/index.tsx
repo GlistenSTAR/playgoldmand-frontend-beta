@@ -14,12 +14,12 @@ const Home: NextPage = () => {
 
   return (
     <div className={cb(
-        'w-screen h-screen opacity-100', 
-        'flex justify-around'
+        'w-screen sm:w-auto h-auto md:h-screen opacity-100', 
+        'flex items-center justify-center',
+        'pt-14 md:pt-auto'
       )}>
         <div className={cb(
-            'absolute h-screen', 
-            'flex flex-col items-center justify-center'
+          'flex flex-col items-center justify-center'
         )}>
           <Image 
             src={require('./../assets/img/logo_1.png')}
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
           />
 
           <p className={cb(
-            'mt-20 mb-5 text-base text-white text-center italic'
+            'mt-16 md:mt-20 mb-5 text-base text-white text-center italic'
           )}>Login With</p>
 
           <Image 
@@ -42,13 +42,14 @@ const Home: NextPage = () => {
             }
           />
           <Button className={cb(
-              'p-2 mt-14 mb-20 w-64', 
+              'p-2 w-64 mt-10 mb-16 sm:mt-20 sm:mb-40', 
               'border-4 border-green-500 rounded-full shadow-2xl', 
               'text-white text-lg bg-black bg-opacity-50'
             )}
             onClick={()=>goRegister()}>
             START PLAYING
           </Button>
+
           <SocialGroupIcon />
         </div>
     </div>

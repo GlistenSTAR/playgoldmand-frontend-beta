@@ -8,7 +8,7 @@ const ChooseRace = () => {
   return (
     <div className={cb('w-full')}>
       <div className={cb(
-        'mt-10 text-white w-full'
+        'mt-8 text-white w-full'
       )}>
         <p className={cb(
           'text-center text-yellow text-2xl uppercase',
@@ -16,7 +16,8 @@ const ChooseRace = () => {
         )}>Choose a race</p>
       </div>
       <div className={cb(
-        'flex row mt-14  text-center text-white'
+        'flex row text-center text-white',
+        'mt-4'
       )}>
         <div className={cb(
             'card_box transition transform ease-in-out duration-300'
@@ -25,14 +26,14 @@ const ChooseRace = () => {
           onMouseLeave={()=>setShow(false)}
         >
           <div className={cb(
-            'p-2 bg-item_box_color rounded-lg mx-10',
-            'hover:bg-green-400',
+            'rounded-lg mx-10 pt-3.5 pb-5 px-5',
+            'bg-none hover:bg-green-400',
           )}>
             <Image 
               src={require('../../assets/img/race.png')}
               alt="item"
-              width="268"
-              height="359"
+              width="270"
+              height="400"
             />
           </div>
           <p className="mt-2 text-lg">ALF&apos;S</p>
@@ -44,14 +45,14 @@ const ChooseRace = () => {
           onMouseLeave={()=>setShow(false)}
         >
           <div className={cb(
-            'p-2 bg-item_box_color rounded-lg mx-10',
-            'hover:bg-green-400',
+            'rounded-lg mx-10 pt-3.5 pb-5 px-5',
+            'bg-none hover:bg-green-400',
           )}>
             <Image 
               src={require('../../assets/img/race.png')}
               alt="item"
-              width="268"
-              height="359"
+              width="270"
+              height="400"
             />
           </div>
           <p className="mt-2 text-lg">PEOPLES</p>
@@ -63,14 +64,14 @@ const ChooseRace = () => {
           onMouseLeave={()=>setShow(false)}
         >
           <div className={cb(
-            'p-2 bg-item_box_color rounded-lg mx-10',
-            'hover:bg-green-400',
+            'rounded-lg mx-10 pt-3.5 pb-5 px-5',
+            'bg-none hover:bg-green-400',
           )}>
             <Image 
               src={require('../../assets/img/race.png')}
               alt="item"
-              width="268"
-              height="359"
+              width="270"
+              height="400"
             />
           </div>
           <p className="mt-2 text-lg uppercase">Venom&apos;s</p>

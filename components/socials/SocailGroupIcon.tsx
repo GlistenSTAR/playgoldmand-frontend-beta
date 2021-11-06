@@ -3,7 +3,7 @@ import cb from 'classnames'
 
 const SocailGroupIcon = () => {
   return (
-    <div className="flex absolute bottom-10">
+    <div className="flex">
       <div className={cb('mx-1.5')}>
         <Image
           src={require('../../assets/img/icons/discord.png')}
