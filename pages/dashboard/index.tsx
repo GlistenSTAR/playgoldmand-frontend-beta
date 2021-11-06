@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import {useState} from 'react'
 import cb from 'classnames';
 
 import UserAvartar from '../../components/useravatar'
@@ -7,6 +8,8 @@ import MineTime from '../../components/minetime'
 import Status from '../../components/status'
 
 const Dashboard: NextPage = () => {
+  let [status, setStatus] = useState(0); 
+
   return (
     <div className={cb(
       'w-screen h-screen bg-cover bg-opacity-50',
@@ -14,7 +17,7 @@ const Dashboard: NextPage = () => {
     )}>
       {/* dashboard header */}
       <div className={cb(
-        'flex column justify-between'
+        'flex column justify-between sm:justify'
       )}>
         <UserAvartar />
         <MineTime />

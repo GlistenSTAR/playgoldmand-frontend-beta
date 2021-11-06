@@ -13,7 +13,7 @@ const ChooseAvartar = () => {
         <p className={cb(
           'text-center text-yellow text-2xl uppercase',
           'text-shadow font-bold'
-        )}>Choose a avatar</p>
+        )}>Choose your avatar</p>
       </div>
       <div className={cb(
         'flex row mt-14  text-center text-white'
