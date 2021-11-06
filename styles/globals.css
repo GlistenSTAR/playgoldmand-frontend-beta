@@ -85,7 +85,8 @@ body {
 }
 
 .card_box:hover{
-  transform: scale(1.1);
+  /* margin-top: 13px;
+  margin-bottom: 21px; */
 }
 
 .card_box:hover .description {
@@ -95,3 +96,4 @@ body {
 .status_avatar img{
   padding-top: 6px!important
 }
+

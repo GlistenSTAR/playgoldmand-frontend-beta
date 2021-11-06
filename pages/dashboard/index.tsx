@@ -25,7 +25,10 @@ const Dashboard: NextPage = () => {
       </div>
 
       {/* dashboard content */}
-      <div>world</div>
+      <div className="tab_content">
+        <div>Hello</div>
+        <div>Hello</div>
+      </div>
 
       {/* dashboard footer */}
       <FooterMenu />

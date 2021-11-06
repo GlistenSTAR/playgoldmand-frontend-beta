@@ -25,14 +25,14 @@ const ChooseAvartar = () => {
           onMouseLeave={()=>setShow(false)}
         >
           <div className={cb(
-            'p-2 bg-item_box_color rounded-lg mx-10',
-            'hover:bg-green-400',
+            'rounded-lg mx-10 pt-3.5 pb-5 px-5',
+            'bg-none hover:bg-green-400',
           )}>
             <Image 
-              src={require('../../assets/img/avartar.png')}
+              src={require('../../assets/img/race.png')}
               alt="item"
-              width="268"
-              height="359"
+              width="270"
+              height="400"
             />
           </div>
           <p className="mt-2 text-lg">ALF&apos;S</p>
@@ -44,14 +44,14 @@ const ChooseAvartar = () => {
           onMouseLeave={()=>setShow(false)}
         >
           <div className={cb(
-            'p-2 bg-item_box_color rounded-lg mx-10',
-            'hover:bg-green-400',
+            'rounded-lg mx-10 pt-3.5 pb-5 px-5',
+            'bg-none hover:bg-green-400',
           )}>
             <Image 
-              src={require('../../assets/img/avartar.png')}
+              src={require('../../assets/img/race.png')}
               alt="item"
-              width="268"
-              height="359"
+              width="270"
+              height="400"
             />
           </div>
           <p className="mt-2 text-lg">PEOPLES</p>
@@ -63,14 +63,14 @@ const ChooseAvartar = () => {
           onMouseLeave={()=>setShow(false)}
         >
           <div className={cb(
-            'p-2 bg-item_box_color rounded-lg mx-10',
-            'hover:bg-green-400',
+            'rounded-lg mx-10 pt-3.5 pb-5 px-5',
+            'bg-none hover:bg-green-400',
           )}>
             <Image 
-              src={require('../../assets/img/avartar.png')}
+              src={require('../../assets/img/race.png')}
               alt="item"
-              width="268"
-              height="359"
+              width="270"
+              height="400"
             />
           </div>
           <p className="mt-2 text-lg uppercase">Venom&apos;s</p>
@@ -82,14 +82,14 @@ const ChooseAvartar = () => {
           onMouseLeave={()=>setShow(false)}
         >
           <div className={cb(
-            'p-2 bg-item_box_color rounded-lg mx-10',
-            'hover:bg-green-400',
+            'rounded-lg mx-10 pt-3.5 pb-5 px-5',
+            'bg-none hover:bg-green-400',
           )}>
             <Image 
-              src={require('../../assets/img/avartar.png')}
+              src={require('../../assets/img/race.png')}
               alt="item"
-              width="268"
-              height="359"
+              width="270"
+              height="400"
             />
           </div>
           <p className="mt-2 text-lg uppercase">Venom&apos;s</p>
