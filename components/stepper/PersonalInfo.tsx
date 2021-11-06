@@ -75,8 +75,8 @@ const PersonalInfo = () => {
             onChange={(e)=> setCheck2(!check2)}
           />
           <p className="ml-3 uppercase">
-            I Agree to the 
-            <Link href="#" className="underline">Terms &amp; Conditions</Link>
+            I Agree to the&nbsp; 
+            <Link href="#" className="underline"><span>Terms &amp; Conditions</span></Link>
           </p>
         </div>
       </div>

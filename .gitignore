@@ -37,3 +37,6 @@ yarn-error.log*
 *.tsbuildinfo
 
 /.idea/
+
+# static folder for DigitalOcean App Platform
+_static
