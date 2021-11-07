@@ -58,8 +58,9 @@ const PersonalInfo = () => {
             )}
             checked={check1}
             onChange={(e)=> setCheck1(!check1)}
+            id="18over"
           />
-          <p className="ml-3 uppercase">I am 18+ years of age</p>
+          <label className="ml-3 uppercase" htmlFor="18over">I am 18+ years of age</label>
         </div>
 
         <div className={cb(
@@ -73,11 +74,12 @@ const PersonalInfo = () => {
             )}
             checked={check2}
             onChange={(e)=> setCheck2(!check2)}
+            id="policy"
           />
-          <p className="ml-3 uppercase">
+          <label className="ml-3 uppercase" htmlFor="policy">
             I Agree to the&nbsp; 
             <Link href="#" className="underline"><span>Terms &amp; Conditions</span></Link>
-          </p>
+          </label>
         </div>
       </div>
     </div>
