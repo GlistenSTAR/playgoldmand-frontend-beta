@@ -61,8 +61,8 @@ export default function HorizonStepper() {
           { activeStep === steps.length - 1 ? 
               (
                 <Button className={cb(
-                  'p-2 mt-4 mb-20 w-64', 
-                  'border-4 border-green-500 rounded-full', 
+                  'p-2 mt-4 md:mt-4 mb-10 md:mb-12 w-64',  
+                  'border-4 border-green-500 rounded-full shadow-2xl', 
                   'text-white text-lg bg-black bg-opacity-50'
                   // eslint-disable-next-line react/no-unescaped-entities
                   )}
@@ -72,7 +72,7 @@ export default function HorizonStepper() {
                 :
               (
                 <Button onClick={handleNext} className={cb(
-                  'p-2 mt-2 md:mt-auto mb-10 md:mb-20 w-64', 
+                  'p-2 mt-4 md:mt-4 mb-10 md:mb-12 w-64', 
                   'border-4 border-green-500 rounded-full shadow-2xl', 
                   'text-white text-lg bg-black bg-opacity-50'
                 )}>NEXT STEP</Button>

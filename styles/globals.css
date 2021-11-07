@@ -30,7 +30,7 @@ body {
   font-family: 'futura';
   background: url('../assets/img/landscape.png') no-repeat;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-size: fixed;
 }
 
