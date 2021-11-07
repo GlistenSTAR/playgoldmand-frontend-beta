@@ -16,7 +16,8 @@ const ChooseAvartar = () => {
         )}>Choose your avatar</p>
       </div>
       <div className={cb(
-        'flex row mt-14  text-center text-white'
+        'flex flex-col md:flex-row text-center text-white',
+        'mt-4'
       )}>
         <div className={cb(
             'card_box transition transform ease-in-out duration-300'
@@ -96,7 +97,7 @@ const ChooseAvartar = () => {
         </div>
       </div>
 
-      <div className={cb('relative text-center text-white w-full mt-20 mb-4')}>
+      <div className={cb('relative text-center text-white w-full mt-10 mb-4')}>
       {
         show?(
             <p className="description absolute w-full left-0 bottom-0 px-20 sm:px-4">

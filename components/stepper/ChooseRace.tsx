@@ -16,11 +16,12 @@ const ChooseRace = () => {
         )}>Choose a race</p>
       </div>
       <div className={cb(
-        'flex row text-center text-white',
+        'flex flex-col md:flex-row text-center text-white',
         'mt-4'
       )}>
         <div className={cb(
-            'card_box transition transform ease-in-out duration-300'
+            'card_box transition transform ease-in-out duration-300',
+            'w-full md:w-auto'
           )} 
           onMouseEnter={()=>setShow(true)}
           onMouseLeave={()=>setShow(false)}

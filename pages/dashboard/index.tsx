@@ -12,7 +12,7 @@ const Dashboard: NextPage = () => {
 
   return (
     <div className={cb(
-      'w-screen h-screen bg-cover bg-opacity-50',
+      'w-screen bg-cover bg-opacity-50',
       'pt-10 items-center'
     )}>
       {/* dashboard header */}

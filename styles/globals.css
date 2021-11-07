@@ -30,8 +30,8 @@ body {
   font-family: 'futura';
   background: url('../assets/img/landscape.png') no-repeat;
   width: 100%;
-  height: 100vh;
-  background-size: cover;
+  height: 100%;
+  background-size: fixed;
 }
 
 .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root{

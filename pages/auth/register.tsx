@@ -6,11 +6,11 @@ import HorizonStepper from '../../components/stepper/Stepper'
 const register = () => {
   return (
     <div className={cb(
-      'w-screen h-screen opacity-100', 
-      'flex justify-around'
+      'w-screen sm:w-auto opacity-100', 
+      'flex justify-around p-2 md:p-auto pt-10 md:pt-auto'
     )}>
       <div className={cb(
-        'absolute h-screen flex flex-col',
+        'flex flex-col',
         'items-center justify-center'
       )}>
         <Image 
