@@ -38,5 +38,8 @@ yarn-error.log*
 
 /.idea/
 
+#vscode
+/.vscode/
+
 # static folder for DigitalOcean App Platform
 _static
