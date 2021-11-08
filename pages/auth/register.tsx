@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import cb from 'classnames'
-import SocialGroupIcon from '../../components/socials/SocailGroupIcon'
+import SocialGroupIcon from '../../components/socials/SocialGroupIcon'
 import HorizonStepper from '../../components/stepper/Stepper'
 
-const register = () => {
+const register = (props) => {
   return (
     <div className={cb(
       'w-screen sm:w-auto opacity-100', 

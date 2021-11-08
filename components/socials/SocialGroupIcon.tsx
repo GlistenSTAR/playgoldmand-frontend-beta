@@ -1,35 +1,36 @@
 import Image from 'next/image'
+import Link from '../common/input/Link'
 import cb from 'classnames'
 
-const SocailGroupIcon = () => {
+const SocialGroupIcon = () => {
   return (
     <div className="flex">
-      <div className={cb('mx-1.5')}>
+      <Link href="#" className={cb('mx-1.5 transform hover:scale-110 motion-reduce:transform-none')}>
         <Image
           src={require('../../assets/img/icons/discord.png')}
           width="32"
           height="32"
           alt="socail_icon"
         />
-      </div>
-      <div className={cb('mx-1.5')}>
+      </Link>
+      <Link href="#" className={cb('mx-1.5 transform hover:scale-110 motion-reduce:transform-none')}>
         <Image
           src={require('../../assets/img/icons/telegram.png')}
           width="32"
           height="32"
           alt="socail_icon"
         />
-      </div>
-      <div className={cb('mx-1.5')}>
+      </Link>
+      <Link href="#" className={cb('mx-1.5 transform hover:scale-110 motion-reduce:transform-none')}>
         <Image
           src={require('../../assets/img/icons/reddit.png')}
           width="32"
           height="32"
           alt="socail_icon"
         />
-      </div> 
+      </Link>
     </div>
   );
 }
 
-export default SocailGroupIcon;
+export default SocialGroupIcon;
