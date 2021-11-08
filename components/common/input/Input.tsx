@@ -2,7 +2,7 @@ import React from 'react'
 import cb from 'classnames'
 
 export default function Input(
-  { type, id, value, className, placeholder, checked, required, disabled, onChange : onChangeCallback} : {
+  { type, id, value, className, placeholder, checked, required, disabled, onChange: onChangeCallback }: {
     type?: string,
     id?: string,
     value?: string,

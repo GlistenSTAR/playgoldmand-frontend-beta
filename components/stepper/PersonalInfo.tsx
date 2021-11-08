@@ -22,10 +22,10 @@ const PersonalInfo = () => {
           'mt-4 md:mt-16'
         )}>
           <p>USERNAME</p>
-          <Input 
-            type="text" 
-            onChange={(e)=> setName(e.target.value)} 
-            value={name} 
+          <Input
+            type="text"
+            onChange={(e) => setName(e.target.value)}
+            value={name}
             required={true}
             className={cb(
               'text-yellow bg-black bg-opacity-25 w-full mt-2 border-2 border-white'
@@ -36,10 +36,10 @@ const PersonalInfo = () => {
           'mt-2 md:mt-8'
         )}>
           <p>EMAIL</p>
-          <Input 
-            type="text" 
-            onChange={(e)=> setEmail(e.target.value)} 
-            value={email} 
+          <Input
+            type="text"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
             required={true}
             className={cb(
               'text-yellow bg-black bg-opacity-25 w-full mt-2 border-2 border-white'
@@ -50,14 +50,14 @@ const PersonalInfo = () => {
         <div className={cb(
           'mt-8 flex row items-end checkbox'
         )}>
-          <Input 
-            type="checkbox" 
+          <Input
+            type="checkbox"
             className={cb(
               'text-yellow bg-black bg-opacity-25 mt-2 w-6 h-6',
               'outline-white',
             )}
             checked={check1}
-            onChange={(e)=> setCheck1(!check1)}
+            onChange={(e) => setCheck1(!check1)}
             id="18over"
           />
           <label className="ml-3 uppercase" htmlFor="18over">I am 18+ years of age</label>
@@ -66,18 +66,18 @@ const PersonalInfo = () => {
         <div className={cb(
           'mt-2 flex row items-end checkbox'
         )}>
-          <Input 
-            type="checkbox" 
+          <Input
+            type="checkbox"
             className={cb(
               'text-yellow bg-black bg-opacity-25 mt-2 w-6 h-6',
               'outline-white',
             )}
             checked={check2}
-            onChange={(e)=> setCheck2(!check2)}
+            onChange={(e) => setCheck2(!check2)}
             id="policy"
           />
           <label className="ml-3 uppercase" htmlFor="policy">
-            I Agree to the&nbsp; 
+            I Agree to the&nbsp;
             <Link href="#" className="underline"><span>Terms &amp; Conditions</span></Link>
           </label>
         </div>

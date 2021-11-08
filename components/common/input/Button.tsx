@@ -2,7 +2,7 @@ import React, { MouseEventHandler } from 'react'
 import cb from 'classnames'
 
 export default function Button(
-  { children, className, disabled, onClick} : {
+  { children, className, disabled, onClick }: {
     children: JSX.Element | JSX.Element[] | string,
     className?: string,
     disabled?: boolean,

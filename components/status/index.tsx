@@ -11,10 +11,10 @@ const index = () => {
         'items-center px-4 bg-blue'
       )}>
         <div className={cb(
-        'w-10 h-10 rounded-full border-white border-2',
-        'text-white text-center status_avatar'
+          'w-10 h-10 rounded-full border-white border-2',
+          'text-white text-center status_avatar'
         )}>
-          <Image  
+          <Image
             src={require('../../assets/img/icons/stone.png')}
             alt="stone icon"
             width="30"
@@ -29,10 +29,10 @@ const index = () => {
         'items-center px-4 bg-blue'
       )}>
         <div className={cb(
-        'w-10 h-10 rounded-full border-white border-2',
-        'text-white text-center status_avatar'
+          'w-10 h-10 rounded-full border-white border-2',
+          'text-white text-center status_avatar'
         )}>
-          <Image  
+          <Image
             src={require('../../assets/img/icons/energy.png')}
             alt="stone icon"
             width="25"
@@ -41,16 +41,16 @@ const index = () => {
         </div>
         <p className="text-white ml-4">1088.00</p>
       </div>
-      
+
       <div className={cb(
         'flex row',
         'items-center px-4 bg-blue'
       )}>
         <div className={cb(
-        'w-10 h-10 rounded-full border-white border-2',
-        'text-white text-center status_avatar'
+          'w-10 h-10 rounded-full border-white border-2',
+          'text-white text-center status_avatar'
         )}>
-          <Image  
+          <Image
             src={require('../../assets/img/icons/heart.png')}
             alt="stone icon"
             width="34"

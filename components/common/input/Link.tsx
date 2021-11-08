@@ -3,7 +3,7 @@ import cb from 'classnames'
 import NextLink from 'next/link'
 
 export default function Link(
-  { children, className, href, external } : {
+  { children, className, href, external }: {
     children: JSX.Element | JSX.Element[]
     className?: string,
     href: string,

@@ -37,7 +37,7 @@ const index = () => {
         <div className={cb(
           'w-52 h-12 -ml-6 mt-1',
           'bg-mark_button cover bg-inactive_button',
-          'text-center text-white', 
+          'text-center text-white',
           'rounded border-white border-2',
           'flex block md:block sm:hidden items-center justify-center',
         )}>
@@ -47,8 +47,8 @@ const index = () => {
           className={cb(
             'mt-2 text-white',
             'flex column justify-center'
-        )}>
-          <Image 
+          )}>
+          <Image
             src={require('../../assets/img/svg/land.png')}
             width="25"
             height="25"

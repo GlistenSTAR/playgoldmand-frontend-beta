@@ -31,7 +31,7 @@ const Menu = () => {
     )}>
       {links.map((link, idx) => <div key={idx} className="m-1">
         <MenuItem text={link.text} href={link.href} imageUrl={link.imageUrl} />
-      </div>)}   
+      </div>)}
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React, {} from 'react'
+import React, { } from 'react'
 import Link from '../common/input/Link'
 import Image from 'next/image'
 import cb from 'classnames'
@@ -19,15 +19,15 @@ export default function MenuItem(
       'bg-mark_button cover bg-inactive_button'
     )}>
       <Link href={href} className="opacity-100 flex items-center" data-toggle="tab">
-          <Image 
-              src={require(`../../assets/img/svg/${imageUrl}`)}
-              width="35"
-              height="35"
-              alt="menu_icon"
-            />
-            <div className="ml-1">
-              {text}
-            </div>
+        <Image
+          src={require(`../../assets/img/svg/${imageUrl}`)}
+          width="35"
+          height="35"
+          alt="menu_icon"
+        />
+        <div className="ml-1">
+          {text}
+        </div>
       </Link>
     </div>
   )

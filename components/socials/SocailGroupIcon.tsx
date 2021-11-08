@@ -27,7 +27,7 @@ const SocailGroupIcon = () => {
           height="32"
           alt="socail_icon"
         />
-      </div> 
+      </div>
     </div>
   );
 }

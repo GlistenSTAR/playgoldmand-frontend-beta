@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import {useState} from 'react'
+import { useState } from 'react'
 import cb from 'classnames';
 
 import UserAvartar from '../../components/useravatar'
@@ -9,7 +9,7 @@ import Status from '../../components/status'
 import DashboardContent from '../../components/dashboardContent'
 
 const Dashboard: NextPage = () => {
-  let [status, setStatus] = useState(0); 
+  let [status, setStatus] = useState(0);
 
   return (
     <div className={cb(
