@@ -6,6 +6,7 @@ import UserAvartar from '../../components/useravatar'
 import FooterMenu from '../../components/menu/menu'
 import MineTime from '../../components/minetime'
 import Status from '../../components/status'
+import DashboardContent from '../../components/dashboardContent'
 
 const Dashboard: NextPage = () => {
   let [status, setStatus] = useState(0); 
@@ -26,8 +27,7 @@ const Dashboard: NextPage = () => {
 
       {/* dashboard content */}
       <div className="tab_content">
-        <div>Hello</div>
-        <div>Hello</div>
+        <DashboardContent />
       </div>
 
       {/* dashboard footer */}

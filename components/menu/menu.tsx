@@ -26,7 +26,7 @@ const links = [{
 const Menu = () => {
   return (
     <div className={cb(
-      'absolute bottom-10 w-full p-5',
+      'w-full p-5',
       'flex justify-around flex-wrap',
     )}>
       {links.map((link, idx) => <div key={idx} className="m-1">
