@@ -1,11 +1,11 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import cb from 'classnames';
-import SocialGroupIcon from '../components/socials/SocailGroupIcon'
+import SocialGroupIcon from '../components/socials/SocialGroupIcon'
 import { useRouter } from 'next/router'
 import Button from '../components/common/input/Button';
 
-const Home: NextPage = () => {
+const Home: NextPage = (props) => {
   const router = useRouter();
 
   const goRegister = () =>{

@@ -21,7 +21,7 @@ const Dashboard: NextPage = () => {
         'flex column justify-between sm:justify'
       )}>
         <UserAvartar />
-        <div className="ml-28">
+        <div className="sm:ml-28">
           <MineTime />
         </div>
         <Status />
