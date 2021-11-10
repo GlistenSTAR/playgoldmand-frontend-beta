@@ -10,17 +10,37 @@ import PersonalInfo from './PersonalInfo';
 import ChooseRace from './ChooseRace';
 import { useRouter } from 'next/router'
 
+import { useMutation } from 'react-query'
+import { fetchRegister } from '../../services/AuthService'
+
 const steps = ['', ''];
 
 export default function HorizonStepper() {
   const [activeStep, setActiveStep] = useState(0);
   const [selected, setSelected] = useState(false);
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [checkAge, setCheckAge] = useState(false);
+  const [checkTerms, setCheckTerms] = useState(false);
 
   const router = useRouter();
 
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  };
+  const {
+    isLoading,
+    error,
+    mutate: register,
+  } = useMutation(fetchRegister, {
+    onSuccess: response =>
+      {
+        console.log('register resp', response)
+        setActiveStep((prevActiveStep) => prevActiveStep + 1)
+      }
+  })
+
+  const handleRegister = () => {
+    checkAge && checkTerms && register({ username: username, email: email })
+  }
+
 
   const toDashboard = () => {
     router.push('/dashboard')
@@ -43,7 +63,16 @@ export default function HorizonStepper() {
       {
        activeStep ===0?
        (
-        <PersonalInfo />  
+        <PersonalInfo
+          username={username}
+          setUsername={setUsername}
+          email={email}
+          setEmail={setEmail}
+          checkAge={checkAge}
+          setCheckAge={setCheckAge}
+          checkTerms={checkTerms}
+          setCheckTerms={setCheckTerms}
+        />
        ) :
         (
           <ChooseRace selected={selected} setSelected={setSelected}/>
@@ -67,7 +96,7 @@ export default function HorizonStepper() {
             ) 
               :
             (
-              <Button onClick={handleNext} className={cb(
+              <Button onClick={handleRegister} className={cb(
                 'p-2 mt-4 md:mt-4 mb-10 md:mb-12 w-64', 
                 'border-4 border-green-500 rounded-full shadow-2xl', 
                 'text-white text-lg bg-black bg-opacity-50'

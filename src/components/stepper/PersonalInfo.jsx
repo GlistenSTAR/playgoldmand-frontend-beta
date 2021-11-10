@@ -1,13 +1,10 @@
-import { useState } from 'react';
 import cb from 'classnames'
 import Input from '../common/input/Input'
 import Link from '../common/input/Link';
 
-const PersonalInfo = () => {
-  let [name, setName] = useState('');
-  let [email, setEmail] = useState('');
-  let [check1, setCheck1] = useState(false);
-  let [check2, setCheck2] = useState(false);
+const PersonalInfo = (
+  { username, setUsername, email, setEmail, checkAge, setCheckAge, checkTerms, setCheckTerms}
+) => {
 
   return (
     <div className={cb('w-full')}>
@@ -24,11 +21,12 @@ const PersonalInfo = () => {
           <p>USERNAME</p>
           <Input 
             type="text" 
-            onChange={(e)=> setName(e.target.value)} 
-            value={name} 
+            onChange={(e)=> setUsername(e.target.value)} 
+            value={username} 
             required={true}
             className={cb(
-              'text-yellow bg-black bg-opacity-25 w-full mt-2 border-2 border-white'
+              'text-yellow bg-black bg-opacity-25'
+              ,'w-full mt-2 border-2 border-white'
             )}
           />
         </div>
@@ -42,7 +40,8 @@ const PersonalInfo = () => {
             value={email} 
             required={true}
             className={cb(
-              'text-yellow bg-black bg-opacity-25 w-full mt-2 border-2 border-white'
+              'text-yellow bg-black bg-opacity-25',
+              'w-full mt-2 border-2 border-white'
             )}
           />
         </div>
@@ -56,8 +55,8 @@ const PersonalInfo = () => {
               'text-yellow bg-black bg-opacity-25 mt-2 w-6 h-6',
               'outline-white',
             )}
-            checked={check1}
-            onChange={(e)=> setCheck1(!check1)}
+            checked={checkAge}
+            onChange={(e)=> setCheckAge(!checkAge)}
             id="18over"
           />
           <label className="ml-3 uppercase" htmlFor="18over">I am 18+ years of age</label>
@@ -72,8 +71,8 @@ const PersonalInfo = () => {
               'text-yellow bg-black bg-opacity-25 mt-2 w-6 h-6',
               'outline-white',
             )}
-            checked={check2}
-            onChange={(e)=> setCheck2(!check2)}
+            checked={checkTerms}
+            onChange={(e)=> setCheckTerms(!checkTerms)}
             id="policy"
           />
           <label className="ml-3 uppercase" htmlFor="policy">
