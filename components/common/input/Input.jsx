@@ -2,20 +2,10 @@ import React from 'react'
 import cb from 'classnames'
 
 export default function Input(
-  { type, id, value, className, placeholder, checked, required, disabled, onChange : onChangeCallback} : {
-    type?: string,
-    id?: string,
-    value?: string,
-    className?: string,
-    placeholder?: string,
-    checked?: boolean,
-    required?: boolean,
-    disabled?: boolean,
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
-  }
-): JSX.Element {
+  { type, id, value, className, placeholder, checked, required, disabled, onChange : onChangeCallback}
+) {
 
-  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const onChange = (e) => {
     onChangeCallback(e)
   }
 

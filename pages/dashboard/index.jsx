@@ -1,4 +1,3 @@
-import type { NextPage } from 'next'
 import {useState} from 'react'
 import cb from 'classnames';
 
@@ -8,7 +7,7 @@ import MineTime from '../../components/minetime'
 import Status from '../../components/status'
 import DashboardContent from '../../components/dashboardContent'
 
-const Dashboard: NextPage = () => {
+const Dashboard = () => {
   let [status, setStatus] = useState(0); 
 
   return (

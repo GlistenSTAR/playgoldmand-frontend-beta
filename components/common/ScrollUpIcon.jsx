@@ -4,11 +4,7 @@ import Button from './input/Button'
 import cb from 'classnames'
 
 export default function ScrollUpIcon(
-  { className, onClick} : {
-    className: string,
-    onClick: MouseEventHandler
-  }
-): JSX.Element {
+  { className, onClick}) {
   return (
     <Button 
         className={cb(

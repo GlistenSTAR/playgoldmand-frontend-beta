@@ -1,6 +1,5 @@
 import '../styles/globals.css'
 import "regenerator-runtime/runtime";
-import type { AppProps } from 'next/app'
 import {withUAL, UALProvider} from "ual-reactjs-renderer";
 import {Anchor} from "ual-anchor";
 import {Wax} from "@eosdacio/ual-wax";
@@ -23,7 +22,7 @@ const wax = new Wax([waxNet]);
 
 const wallets = [wax, anchor];
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }) {
   const AppContainer = (props) => {
     return (
       <div>

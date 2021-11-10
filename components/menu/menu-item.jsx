@@ -4,12 +4,7 @@ import Image from 'next/image'
 import cb from 'classnames'
 
 export default function MenuItem(
-  { text, href, imageUrl }: {
-    text: string,
-    href: string,
-    imageUrl: string
-  }
-): JSX.Element {
+  { text, href, imageUrl }) {
 
   return (
     <div className={cb(

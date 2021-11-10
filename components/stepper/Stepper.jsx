@@ -30,10 +30,8 @@ export default function HorizonStepper() {
     <Box sx={{ marginTop: '40px', display: 'flex', flexDirection:'column', alignItems:'center'}}>
       <Stepper activeStep={activeStep} sx={{ width: '200px'}}>
         {steps.map((label, index) => {
-          const stepProps: { completed?: boolean } = {};
-          const labelProps: {
-            optional?: React.ReactNode;
-          } = {};
+          const stepProps = {};
+          const labelProps = {};
           return (
             <Step key={index} {...stepProps} className="color-white bg-red">
               <StepLabel {...labelProps}></StepLabel>
