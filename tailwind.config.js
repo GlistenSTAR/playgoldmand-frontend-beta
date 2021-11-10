@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        'mark_button':"url('./../assets/img/button_mask_1.png')",
+        'mark_button':"url('/img/button_mask_1.png')",
       },
       textColor:{
         'yellow':"#F68D38",
