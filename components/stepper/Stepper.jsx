@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
@@ -14,7 +14,8 @@ import { useRouter } from 'next/router'
 const steps = ['', ''];
 
 export default function HorizonStepper() {
-  const [activeStep, setActiveStep] = React.useState(0);
+  const [activeStep, setActiveStep] = useState(0);
+  const [selected, setSelected] = useState(false);
 
   const router = useRouter();
 
@@ -46,7 +47,7 @@ export default function HorizonStepper() {
         <PersonalInfo />  
        ) :
         (
-          <ChooseRace />
+          <ChooseRace selected={selected} setSelected={setSelected}/>
         )
       }
       
@@ -60,9 +61,9 @@ export default function HorizonStepper() {
                 'text-white text-lg bg-black bg-opacity-50'
                 // eslint-disable-next-line react/no-unescaped-entities
                 )}
-                onClick = {() => toDashboard()}
+                onClick = {() => selected && toDashboard()}
               >
-                NEXT STEP
+                {selected? `I'M READY` : `NEXT STEP`}
               </Button>
             ) 
               :

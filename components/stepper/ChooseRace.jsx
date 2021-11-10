@@ -2,9 +2,8 @@ import {useState} from 'react'
 import Image from 'next/image'
 import cb from 'classnames'
 
-const ChooseRace = () => {
+const ChooseRace = ({selected, setSelected}) => {
   const [show, setShow] = useState(false);
-  const [selectNum, setSelectNum] =  useState(0);
 
   return (
     <div className={cb('w-full')}>
@@ -26,12 +25,12 @@ const ChooseRace = () => {
           )} 
           onMouseEnter={()=>setShow(true)}
           onMouseLeave={()=>setShow(false)}
-          onClick={() => setSelectNum(1)}
+          onClick={() => setSelected(1)}
         >
           <div className={cb(
             'rounded-lg mx-10 pt-3.5 pb-5 px-5',
             'bg-none hover:bg-green-400',
-            selectNum===1?'bg-green-400':''
+            selected===1?'bg-green-400':''
           )}>
             <Image 
               src={require('../../assets/img/race.png')}
@@ -47,12 +46,12 @@ const ChooseRace = () => {
           )} 
           onMouseEnter={()=>setShow(true)}
           onMouseLeave={()=>setShow(false)}
-          onClick={() => setSelectNum(2)}
+          onClick={() => setSelected(2)}
         >
           <div className={cb(
             'rounded-lg mx-10 pt-3.5 pb-5 px-5',
             'bg-none hover:bg-green-400',
-            selectNum===2?'bg-green-400':''
+            selected===2?'bg-green-400':''
           )}>
             <Image 
               src={require('../../assets/img/race.png')}
@@ -68,12 +67,12 @@ const ChooseRace = () => {
           )} 
           onMouseEnter={()=>setShow(true)}
           onMouseLeave={()=>setShow(false)}
-          onClick={() => setSelectNum(3)}
+          onClick={() => setSelected(3)}
         >
           <div className={cb(
             'rounded-lg mx-10 pt-3.5 pb-5 px-5',
             'bg-none hover:bg-green-400',
-            selectNum===3?'bg-green-400':''
+            selected===3?'bg-green-400':''
           )}>
             <Image 
               src={require('../../assets/img/race.png')}
