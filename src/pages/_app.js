@@ -7,6 +7,7 @@ import {withUAL, UALProvider} from "ual-reactjs-renderer";
 import {Anchor} from "ual-anchor";
 import {Wax} from "@eosdacio/ual-wax";
 import config from '../config/config.json';
+import cb from 'classnames';
 export const queryClient = new QueryClient()
 
 const waxNet = {
@@ -29,7 +30,10 @@ const wallets = [wax, anchor];
 function MyApp({ Component, pageProps }) {
   const AppContainer = (props) => {
     return (
-      <div className="relative w-full h-full">
+      <div className={cb(
+        'fixed top-0 left-0 h-full w-full',
+        'flex justify-center items-center',
+      )}>
         <Navbar {...props} />
         <Component {...props} />
       </div>

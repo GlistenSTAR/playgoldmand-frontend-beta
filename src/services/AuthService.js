@@ -2,6 +2,9 @@ import Axios from '../utils/axios'
 import { baseApiUrl } from '../utils/constants'
 export const endpointUrl = url => `${baseApiUrl}${url}`
 
+export const fetchAdminLogin = data => {
+  return Axios.get(endpointUrl('auth/adminlogin'), { adminUsername:data.adminUsername, password: data.password })
+}
 export const fetchLogout = () => {
   return Axios.get(endpointUrl('auth/logout'))
 }
