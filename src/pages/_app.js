@@ -1,5 +1,7 @@
 import '../styles/globals.css'
+import 'react-toastify/dist/ReactToastify.css'
 import "regenerator-runtime/runtime";
+import Navbar from "../components/navbar/navbar"
 import { QueryClientProvider, QueryClient } from 'react-query'
 import {withUAL, UALProvider} from "ual-reactjs-renderer";
 import {Anchor} from "ual-anchor";
@@ -27,7 +29,8 @@ const wallets = [wax, anchor];
 function MyApp({ Component, pageProps }) {
   const AppContainer = (props) => {
     return (
-      <div>
+      <div className="relative w-full h-full">
+        <Navbar {...props} />
         <Component {...props} />
       </div>
     )

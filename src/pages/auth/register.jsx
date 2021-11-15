@@ -20,7 +20,7 @@ const register = (props) => {
           alt="logo"
         />
         
-        <HorizonStepper />
+        <HorizonStepper {...props} />
         
         <SocialGroupIcon />
       </div>

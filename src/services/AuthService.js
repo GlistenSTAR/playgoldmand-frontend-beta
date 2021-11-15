@@ -6,5 +6,11 @@ export const fetchLogout = () => {
   return Axios.get(endpointUrl('auth/logout'))
 }
 export const fetchRegister = data => {
-  return Axios.post(endpointUrl('auth/register'), { username: data.username, email: data.email })
+  return Axios.post(endpointUrl('auth/register'), { accountName:data.accountName, username: data.username, email: data.email })
+}
+export const fetchCheckRegister = data => {
+  return Axios.post(endpointUrl('auth/checkregister'), { accountName:data.accountName })
+}
+export const fetchUserProfile = () => {
+  return Axios.get(endpointUrl('auth/getprofile'))
 }

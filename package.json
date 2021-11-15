@@ -21,10 +21,12 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-query": "^3.32.1",
+    "react-toastify": "^8.1.0",
     "regenerator-runtime": "^0.13.9",
     "styled-components": "^5.3.3",
     "ual-anchor": "^1.1.2",
-    "ual-reactjs-renderer": "^0.3.1"
+    "ual-reactjs-renderer": "^0.3.1",
+    "universal-cookie": "^4.0.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",

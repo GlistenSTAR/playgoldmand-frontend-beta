@@ -15,7 +15,10 @@ import { fetchRegister } from '../../services/AuthService'
 
 const steps = ['', ''];
 
-export default function HorizonStepper() {
+export default function HorizonStepper(props) {
+  const ual = props['ual'] ? props['ual'] : {'activeUser': null};
+  const activeUser = ual['activeUser'];
+  const accountName = activeUser ? activeUser['accountName'] : null;
   const [activeStep, setActiveStep] = useState(0);
   const [selected, setSelected] = useState(false);
   const [username, setUsername] = useState('');
@@ -32,13 +35,13 @@ export default function HorizonStepper() {
   } = useMutation(fetchRegister, {
     onSuccess: response =>
       {
-        console.log('register resp', response)
         setActiveStep((prevActiveStep) => prevActiveStep + 1)
-      }
+      },
+    onError: console.log('register error')
   })
 
   const handleRegister = () => {
-    checkAge && checkTerms && register({ username: username, email: email })
+    checkAge && checkTerms && register({ accountName:accountName, username: username, email: email })
   }
 
 
