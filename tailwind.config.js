@@ -18,6 +18,9 @@ module.exports = {
       outline: {
         white: '2px solid #ffffff',
       },
+      height: {
+        content: 'calc(100% - 14rem)',
+       }
     },
   },
   variants: {

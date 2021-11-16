@@ -1,10 +1,10 @@
-import Link from 'next/link'
+import Link from '../components/common/input/Link'
 import cb from 'classnames'
 
 const NotFoundPage = () => {
   return (
     <div className={cb(
-      'w-screen sm:w-auto opacity-100', 
+      'w-screen h-screen opacity-100', 
       'flex justify-center items-center p-2 md:p-auto pt-10 md:pt-auto'
     )}>
       <div className="p-4 space-y-4">
@@ -36,8 +36,8 @@ const NotFoundPage = () => {
             </p>
             <p className="text-lg font-normal text-gray-300">
               You may return to the{' '}
-              <Link href="/dashboard">
-                <div className="text-blue-600 cursor-pointer hover:underline">dashboard</div>
+              <Link href="/dashboard" className="text-yellow">
+                <span className="cursor-pointer hover:underline uppercase">dashboard</span>
               </Link>
             </p>
           </div>

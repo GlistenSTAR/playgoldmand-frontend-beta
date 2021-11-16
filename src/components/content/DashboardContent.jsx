@@ -6,7 +6,7 @@ const DashboardContent = () => {
     <div
       className={cb('mt-10 mb-10')}
     >
-      <div className="content_header flex flex-row justify-between">
+      <div className="flex flex-row justify-between">
         <div className={cb(
           'p-2 pl-16 pr-16', 
           'bg-black bg-opacity-50 text-white',
@@ -28,18 +28,6 @@ const DashboardContent = () => {
         )}>
           <h1 className="text-primary">Multiplaier:0.1291829%</h1>
           <p>Avg. mining time:: 8 mins</p>
-        </div>
-      </div>
-      <div className="mining_option text-white">
-        <h2 className="text-center pt-4">Mining option</h2>
-        <div className="text-center pt-4">
-          <label className="switch">
-            <input type="checkbox" id="togBtn" />
-            <div className="slider round">
-              <span className="NFTS">NFTS</span>
-              <span className="Currency">Currency</span>
-            </div>
-          </label>
         </div>
       </div>
       <div className="card_group mt-10  flex flex-row">

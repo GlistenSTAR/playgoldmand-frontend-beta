@@ -1,7 +1,7 @@
 import Image from "next/image";
 import cb from "classnames";
 
-const index = () => {
+const Status = () => {
   return (
     <div className={cb("flex item-center pr-10")}>
       <div className={cb("flex row", "items-center px-4 bg-blue")}>
@@ -59,4 +59,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Status;

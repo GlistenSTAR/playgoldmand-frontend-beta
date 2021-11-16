@@ -1,14 +1,17 @@
 import Image from 'next/image'
 import cb from 'classnames'
 
-const index = () => {
+const UserAvatar = (props) => {
+  const ual = props['ual'] ? props['ual'] : {'activeUser': null};
+  const activeUser = ual['activeUser'];
+  const accountName = activeUser ? activeUser['accountName'] : null;
   return (
     <div className={cb(
       'flex column',
       'pl-10'
     )}>
       <div className={cb(
-        'border-white border-2 rounded-full',
+        'border-white border-4 rounded-full',
         'w-20 h-20 relative',
         'flex column'
       )}>
@@ -35,30 +38,24 @@ const index = () => {
       </div>
       <div>
         <div className={cb(
-          'w-52 h-12 -ml-6 mt-1',
-          'bg-mark_button cover bg-inactive_button',
-          'text-center text-white', 
-          'rounded border-white border-2',
-          'flex block md:block sm:hidden items-center justify-center',
+          'w-48 h-12 -ml-4 pl-6 mt-1',
+          'text-left text-white', 
+          'rounded-r-3xl bg-gray-900',
+          'flex flex-col items-left justify-center',
         )}>
-          <span>Bastum</span>
+          <div className="text-lg">Bastum</div>
+          <div className="text-sm">{accountName}</div>
         </div>
         <div
           className={cb(
-            'mt-2 text-white',
-            'flex column justify-center'
+            'mt-2 ml-4 text-white text-sm',
+            'flex justify-left'
         )}>
-          <Image 
-            src={'/img/svg/land.png'}
-            width="25"
-            height="25"
-            alt="land"
-          />
-          <p className="ml-1">Lanladle</p>
+          Mountain fields
         </div>
       </div>
     </div>
   );
 }
 
-export default index;
+export default UserAvatar;

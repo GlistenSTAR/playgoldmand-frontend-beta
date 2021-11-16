@@ -3,9 +3,9 @@ import cb from 'classnames';
 
 import Header from '../../components/common/header/Header';
 import FooterMenu from '../../components/common/menu/menu'
-import DashboardContent from '../../components/content/DashboardContent'
+import InventoryContent from '../../components/content/InventoryContent'
 
-const Dashboard = (props) => {
+const Inventory = (props) => {
   let [status, setStatus] = useState(0); 
 
   return (
@@ -13,12 +13,13 @@ const Dashboard = (props) => {
       'w-screen h-full bg-cover bg-opacity-50',
       'items-center'
     )}>
+
       {/* dashboard header */}
-      <Header {...props} />
+      <Header {...props} /> 
 
       {/* dashboard content */}
-      <div className="tab_content">
-        <DashboardContent />
+      <div className="tab_content h-content">
+        <InventoryContent />
       </div>
 
       {/* dashboard footer */}
@@ -27,4 +28,4 @@ const Dashboard = (props) => {
   )
 }
 
-export default Dashboard
+export default Inventory

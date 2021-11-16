@@ -5,7 +5,7 @@ import Header from '../../components/common/header/Header';
 import FooterMenu from '../../components/common/menu/menu'
 import DashboardContent from '../../components/content/DashboardContent'
 
-const Dashboard = (props) => {
+const Laboratory = (props) => {
   let [status, setStatus] = useState(0); 
 
   return (
@@ -13,11 +13,12 @@ const Dashboard = (props) => {
       'w-screen h-full bg-cover bg-opacity-50',
       'items-center'
     )}>
+
       {/* dashboard header */}
-      <Header {...props} />
+      <Header {...props} /> 
 
       {/* dashboard content */}
-      <div className="tab_content">
+      <div className="tab_content h-content">
         <DashboardContent />
       </div>
 
@@ -27,4 +28,4 @@ const Dashboard = (props) => {
   )
 }
 
-export default Dashboard
+export default Laboratory

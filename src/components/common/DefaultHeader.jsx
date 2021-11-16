@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from "next/head";
 
-export default function Header(
+export default function DefaultHeader(
   { title, description, image }) {
   return (
     <Head>

@@ -1,6 +1,6 @@
 import cb from 'classnames'
 
-const index = () => {
+const MineTime = () => {
   return (
     <div className={cb(
       'text-center pt-4 items-center',
@@ -15,4 +15,4 @@ const index = () => {
   );
 }
 
-export default index;
+export default MineTime;

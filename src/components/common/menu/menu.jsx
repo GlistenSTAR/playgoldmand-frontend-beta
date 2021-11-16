@@ -3,31 +3,32 @@ import MenuItem from './menu-item';
 
 const links = [{
   text: 'Inventory',
-  href: '#inventory',
-  imageUrl: 'inventory.png',
+  href: '/inventory',
+  imageUrl: 'inventory',
 }, {
   text: 'Land',
-  href: '#land',
-  imageUrl: 'land.png',
+  href: '/land',
+  imageUrl: 'land',
 }, {
   text: 'Mining Hub',
-  href: '#mining',
-  imageUrl: 'mining-hub.png',
+  href: '/mining',
+  imageUrl: 'mining-hub',
 }, {
   text: 'My Business',
-  href: '#busniess',
-  imageUrl: 'my-business.png',
+  href: '/business',
+  imageUrl: 'my-business',
 }, {
   text: 'Laboratory',
-  href: '#laboratory',
-  imageUrl: 'laboratory.png',
+  href: '/laboratory',
+  imageUrl: 'laboratory',
 }]
 
 const Menu = () => {
   return (
     <div className={cb(
-      'w-full p-5',
-      'flex justify-around flex-wrap',
+      'absolute bottom-0 bg-gray-900',
+      'h-20 w-full p-2',
+      'flex justify-around items-center flex-wrap',
     )}>
       {links.map((link, idx) => <div key={idx} className="m-1">
         <MenuItem text={link.text} href={link.href} imageUrl={link.imageUrl} />
