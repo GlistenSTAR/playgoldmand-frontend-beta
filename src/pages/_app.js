@@ -32,7 +32,6 @@ function MyApp({ Component, pageProps }) {
     return (
       <div className={cb(
         'fixed top-0 left-0 h-full w-full',
-        'flex justify-center items-center',
       )}>
         <Navbar {...props} />
         <Component {...props} />

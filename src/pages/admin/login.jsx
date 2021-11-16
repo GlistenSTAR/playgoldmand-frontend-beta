@@ -27,8 +27,9 @@ const AdminLogin = (props) => {
   }
   return (
     <div className={cb(
-      'w-screen sm:w-auto opacity-100', 
-      'flex justify-center items-center p-2 md:p-auto pt-10 md:pt-auto'
+      'w-full h-full opacity-100', 
+      'flex justify-center items-center',
+      'p-2 md:p-auto pt-10 md:pt-auto'
     )}>
       <div className={cb(
         'flex flex-col',
@@ -41,12 +42,15 @@ const AdminLogin = (props) => {
           alt="logo"
         />
         
-        <div className={cb('w-full')}>
+        <div className={cb('w-full text-white')}>
+          <div className={cb('mt-16 text-3xl text-center')}>
+            Admin Login
+          </div>
           <div className={cb(
-            'text-white w-full',
+            'w-full',
           )}>
             <div className={cb(
-              'mt-12 md:mt-16'
+              'mt-8 md:mt-12'
             )}>
               <p>USERNAME</p>
               <Input 

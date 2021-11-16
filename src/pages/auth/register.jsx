@@ -6,19 +6,25 @@ import HorizonStepper from '../../components/stepper/Stepper'
 const register = (props) => {
   return (
     <div className={cb(
-      'w-screen sm:w-auto opacity-100', 
-      'flex justify-around p-2 md:p-auto pt-10 md:pt-auto'
+      'w-full h-full opacity-100', 
+      'flex items-center justify-center',
+      'overflow-y-auto',
+      'p-2',
     )}>
       <div className={cb(
         'flex flex-col',
         'items-center justify-center'
       )}>
-        <Image 
-          src={`/img/logo-left.png`}
-          width="333"
-          height="70"
-          alt="logo"
-        />
+        <div className={cb(
+          'mt-20'
+        )}>
+          <Image 
+            src={`/img/logo-left.png`}
+            width="333"
+            height="70"
+            alt="logo"
+          />
+        </div>
         
         <HorizonStepper {...props} />
         

@@ -36,9 +36,8 @@ const Home = (props) => {
 
   return (
     <div className={cb(
-      'w-screen sm:w-auto h-auto md:h-screen opacity-100', 
+      'w-full h-full opacity-100', 
       'flex items-center justify-center',
-      'pt-14 md:pt-auto'
     )}>
       <div className={cb(
         'flex flex-col items-center justify-center'
