@@ -18,7 +18,7 @@ const Land = (props) => {
       <Header {...props} /> 
 
       {/* dashboard content */}
-      <div className="tab_content h-content">
+      <div className="tab_content h-content overflow-y-auto">
         <LandContent />
       </div>
 

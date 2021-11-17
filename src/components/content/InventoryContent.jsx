@@ -1,7 +1,28 @@
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import cb from 'classnames'
+import BuyCardButton from '../../components/common/buyCardBtn'
+
+const Inuse = () => (
+  <div className={cb("bg-in_use_color border-white rounded-in_use_radius border-2 bg-no-repeat",
+    "w-1/2 h-1/10 fixed bottom-in_use_bottom z-50 left-in_use_center bg-buy_card_content text-center flex",
+    "justify-center items-center text-white cursor-pointer md:text-9/10 sm:text-7/10 text-0"
+  )}>
+    IN USE
+  </div>
+)
 
 const InventoryContent = () => {
+  const items = [
+    { url: '/img/wrapper/inventory/bg(1).png', use: true },
+    { url: '/img/wrapper/inventory/bg(2).png', use: false },
+    { url: '/img/wrapper/inventory/bg(3).png', use: true },
+    { url: '/img/wrapper/inventory/bg(4).png', use: false },
+    { url: '/img/wrapper/inventory/bg(5).png', use: false },
+    { url: '/img/wrapper/inventory/bg(6).png', use: false },
+    { url: '/img/wrapper/inventory/bg(7).png', use: false },
+    { url: '/img/wrapper/inventory/bg(8).png', use: false },
+  ];
   return (
     <div
       className={cb('mt-10 mb-10')}
@@ -14,108 +35,27 @@ const InventoryContent = () => {
           )}>Inventory</div>
         </div>
       </div>
-      <div className="card_group mt-10  flex flex-row">
-        <div className={cb(
-              'card_box transition transform ease-in-out duration-300'
-            )} 
-            // onMouseEnter={()=>setShow(true)}
-            // onMouseLeave={()=>setShow(false)}
-            // onClick={() => setSelectNum(1)}
+      <div className={cb("grid grid-flow-row gap-7 m-8 lg:grid-cols-5 md:grid-cols-5",
+        "sm:grid-cols-4 grid-cols-2"
+      )}>
+        {items.map((item, key) => (
+          <div key={key}
+            className={cb(
+              'transition transform ease-in-out duration-300',
+              'relative'
+            )}
           >
-            <div className={cb(
-              'rounded-lg mx-10 pt-3.5 pb-5 px-5',
-              'bg-none hover:bg-green-400',
-              // selectNum===1?'bg-green-400':''
-            )}>
-              <Image 
-                src={'/img/race.png'}
-                alt="item"
-                width="270"
-                height="400"  
-              />
-            </div>
+            <img
+              className='cursor-pointer'
+              src={item.url}
+              alt="item"
+              width="100%"
+            />
+            {item.use && <Inuse />}
           </div>
-          <div className={cb(
-              'card_box transition transform ease-in-out duration-300'
-            )} 
-            // onMouseEnter={()=>setShow(true)}
-            // onMouseLeave={()=>setShow(false)}
-            // onClick={() => setSelectNum(2)}
-          >
-            <div className={cb(
-              'rounded-lg mx-10 pt-3.5 pb-5 px-5',
-              'bg-none hover:bg-green-400',
-              // selectNum===2?'bg-green-400':''
-            )}>
-              <Image 
-                src={'/img/race.png'}
-                alt="item"
-                width="270"
-                height="400"
-              />
-            </div>
-          </div>
-          <div className={cb(
-              'card_box transition transform ease-in-out duration-300'
-            )} 
-            // onMouseEnter={()=>setShow(true)}
-            // onMouseLeave={()=>setShow(false)}
-            // onClick={() => setSelectNum(3)}
-          >
-            <div className={cb(
-              'rounded-lg mx-10 pt-3.5 pb-5 px-5',
-              'bg-none hover:bg-green-400',
-              // selectNum===3?'bg-green-400':''
-            )}>
-              <Image 
-                src={'/img/race.png'}
-                alt="item"
-                width="270"
-                height="400"
-              />
-            </div>
-          </div>
-          <div className={cb(
-              'card_box transition transform ease-in-out duration-300'
-            )} 
-            // onMouseEnter={()=>setShow(true)}
-            // onMouseLeave={()=>setShow(false)}
-            // onClick={() => setSelectNum(4)}
-          >
-            <div className={cb(
-              'rounded-lg mx-10 pt-3.5 pb-5 px-5',
-              'bg-none hover:bg-green-400',
-              // selectNum===4?'bg-green-400':''
-            )}>
-              <Image 
-                src={'/img/race.png'}
-                alt="item"
-                width="270"
-                height="400"
-              />
-            </div>
-          </div>
-          <div className={cb(
-              'card_box transition transform ease-in-out duration-300'
-            )} 
-            // onMouseEnter={()=>setShow(true)}
-            // onMouseLeave={()=>setShow(false)}
-            // onClick={() => setSelectNum(4)}
-          >
-            <div className={cb(
-              'rounded-lg mx-10 pt-3.5 pb-5 px-5',
-              'bg-none hover:bg-green-400',
-              // selectNum===4?'bg-green-400':''
-            )}>
-              <Image 
-                src={'/img/race.png'}
-                alt="item"
-                width="270"
-                height="400"
-              />
-            </div>
-          </div>
+        ))}
       </div>
+      <BuyCardButton />
     </div>
   );
 }

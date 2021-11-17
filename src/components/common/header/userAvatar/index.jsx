@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import cb from 'classnames'
+import Setting from '../setting';
 
 const UserAvatar = (props) => {
-  const ual = props['ual'] ? props['ual'] : {'activeUser': null};
+  const ual = props['ual'] ? props['ual'] : { 'activeUser': null };
   const activeUser = ual['activeUser'];
   const accountName = activeUser ? activeUser['accountName'] : null;
   return (
@@ -37,20 +38,34 @@ const UserAvatar = (props) => {
         </div>
       </div>
       <div>
-        <div className={cb(
-          'w-48 h-12 -ml-4 pl-6 mt-1',
-          'text-left text-white', 
-          'rounded-r-3xl bg-gray-900',
-          'flex flex-col items-left justify-center',
-        )}>
-          <div className="text-lg">Bastum</div>
-          <div className="text-sm">{accountName}</div>
+        <div className="flex flex-row items-center justify-center">
+          <div className={cb(
+            'w-48 h-12 -ml-4 pl-6 mt-1',
+            'text-left text-white',
+            'rounded-r-3xl bg-gray-900',
+            'flex flex-row justify-start',
+          )}>
+            <div className="w-1/2">
+              <p className="text-lg">Bastam</p>
+              <p className="text-sm">{accountName}</p>
+            </div>
+            <div className="w-1/2 flex justify-end items-center pr-2">
+              <Image
+                src={'/img/icons/logout.png'}
+                width="32"
+                height="21"
+                alt="logout"
+                className="cursor-pointer"
+              />
+            </div>
+          </div>
+          <Setting />
         </div>
         <div
           className={cb(
             'mt-2 ml-4 text-white text-sm',
             'flex justify-left'
-        )}>
+          )}>
           Mountain fields
         </div>
       </div>

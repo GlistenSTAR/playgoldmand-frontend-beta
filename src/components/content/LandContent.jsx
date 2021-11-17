@@ -2,6 +2,11 @@ import Image from 'next/image'
 import cb from 'classnames'
 
 const LandContent = () => {
+  const items = [
+    { url: '/img/wrapper/land/bg_1.png' },
+    { url: '/img/wrapper/land/bg_2.png' },
+    { url: '/img/wrapper/land/bg_3.png' },
+  ];
   return (
     <div
       className={cb('mt-10 mb-10')}
@@ -11,110 +16,22 @@ const LandContent = () => {
           <div className={cb(
             'text-yellow text-2xl',
             'text-shadow font-bold uppercase'
-          )}>Land</div>
+          )}>LAND</div>
         </div>
       </div>
-      <div className="card_group mt-10  flex flex-row">
-        <div className={cb(
-              'card_box transition transform ease-in-out duration-300'
-            )} 
-            // onMouseEnter={()=>setShow(true)}
-            // onMouseLeave={()=>setShow(false)}
-            // onClick={() => setSelectNum(1)}
-          >
-            <div className={cb(
-              'rounded-lg mx-10 pt-3.5 pb-5 px-5',
-              'bg-none hover:bg-green-400',
-              // selectNum===1?'bg-green-400':''
-            )}>
-              <Image 
-                src={'/img/race.png'}
-                alt="item"
-                width="270"
-                height="400"  
-              />
-            </div>
+      <div className={cb("grid grid-flow-row gap-5 m-8 lg:grid-cols-3 md:grid-cols-3",
+        "sm:grid-cols-3 grid-cols-2"
+      )}>
+        {items.map((item, key) => (
+          <div key={key}>
+            <img
+              className='cursor-pointer'
+              src={item.url}
+              alt="item"
+              width="100%"
+            />
           </div>
-          <div className={cb(
-              'card_box transition transform ease-in-out duration-300'
-            )} 
-            // onMouseEnter={()=>setShow(true)}
-            // onMouseLeave={()=>setShow(false)}
-            // onClick={() => setSelectNum(2)}
-          >
-            <div className={cb(
-              'rounded-lg mx-10 pt-3.5 pb-5 px-5',
-              'bg-none hover:bg-green-400',
-              // selectNum===2?'bg-green-400':''
-            )}>
-              <Image 
-                src={'/img/race.png'}
-                alt="item"
-                width="270"
-                height="400"
-              />
-            </div>
-          </div>
-          <div className={cb(
-              'card_box transition transform ease-in-out duration-300'
-            )} 
-            // onMouseEnter={()=>setShow(true)}
-            // onMouseLeave={()=>setShow(false)}
-            // onClick={() => setSelectNum(3)}
-          >
-            <div className={cb(
-              'rounded-lg mx-10 pt-3.5 pb-5 px-5',
-              'bg-none hover:bg-green-400',
-              // selectNum===3?'bg-green-400':''
-            )}>
-              <Image 
-                src={'/img/race.png'}
-                alt="item"
-                width="270"
-                height="400"
-              />
-            </div>
-          </div>
-          <div className={cb(
-              'card_box transition transform ease-in-out duration-300'
-            )} 
-            // onMouseEnter={()=>setShow(true)}
-            // onMouseLeave={()=>setShow(false)}
-            // onClick={() => setSelectNum(4)}
-          >
-            <div className={cb(
-              'rounded-lg mx-10 pt-3.5 pb-5 px-5',
-              'bg-none hover:bg-green-400',
-              // selectNum===4?'bg-green-400':''
-            )}>
-              <Image 
-                src={'/img/race.png'}
-                alt="item"
-                width="270"
-                height="400"
-              />
-            </div>
-          </div>
-          <div className={cb(
-              'card_box transition transform ease-in-out duration-300'
-            )} 
-            // onMouseEnter={()=>setShow(true)}
-            // onMouseLeave={()=>setShow(false)}
-            // onClick={() => setSelectNum(4)}
-          >
-            <div className={cb(
-              'rounded-lg mx-10 pt-3.5 pb-5 px-5',
-              'bg-none hover:bg-green-400',
-              // selectNum===4?'bg-green-400':''
-            )}>
-              <Image 
-                src={'/img/race.png'}
-                alt="item"
-                width="270"
-                height="400"
-              />
-            </div>
-          </div>
+        ))}
       </div>
     </div>
   );
