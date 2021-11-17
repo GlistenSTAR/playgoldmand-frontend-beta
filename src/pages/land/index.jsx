@@ -3,7 +3,7 @@ import cb from 'classnames';
 
 import Header from '../../components/common/header/Header';
 import FooterMenu from '../../components/common/menu/menu'
-import DashboardContent from '../../components/content/DashboardContent'
+import LandContent from '../../components/content/LandContent'
 
 const Land = (props) => {
   let [status, setStatus] = useState(0); 
@@ -19,7 +19,7 @@ const Land = (props) => {
 
       {/* dashboard content */}
       <div className="tab_content h-content">
-        <DashboardContent />
+        <LandContent />
       </div>
 
       {/* dashboard footer */}

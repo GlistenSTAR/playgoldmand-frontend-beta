@@ -3,7 +3,7 @@ import cb from 'classnames';
 
 import Header from '../../components/common/header/Header';
 import FooterMenu from '../../components/common/menu/menu'
-import DashboardContent from '../../components/content/DashboardContent'
+import BusinessContent from '../../components/content/BusinessContent'
 
 const MyBusiness = (props) => {
   let [status, setStatus] = useState(0); 
@@ -19,7 +19,7 @@ const MyBusiness = (props) => {
 
       {/* dashboard content */}
       <div className="tab_content h-content">
-        <DashboardContent />
+        <BusinessContent />
       </div>
 
       {/* dashboard footer */}
