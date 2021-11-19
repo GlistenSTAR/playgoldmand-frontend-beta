@@ -15,7 +15,7 @@ const Header = (props) => {
       'py-4 border-b border-gray-400'
     )}>
       <UserAvartar {...props} />
-      {router.pathname === 'mining' && <div className="sm:ml-28">
+      {router.pathname === '/mining' && <div className="sm:ml-28">
         <MineTime />
       </div>}
       <Status />

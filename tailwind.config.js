@@ -13,7 +13,9 @@ module.exports = {
       textColor: {
         'yellow': "#F68D38",
         'primary': '#49C0B0',
-        'blue': '#261A69'
+        'blue': '#261A69',
+        'onLineColor': 'green',
+        'offLineColor': 'red',
       },
       backgroundColor: {
         'item_box_color': 'rgba(255, 255, 255, 0.2)',
@@ -31,6 +33,7 @@ module.exports = {
       borderRadius: {
         'buy_card_radius': '25px',
         'in_use_radius': '10px',
+        'round-full': '50%',
       },
       borderWidth: {
         '3': '3px',

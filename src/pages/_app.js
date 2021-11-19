@@ -1,13 +1,18 @@
-import '../styles/globals.css'
+import Head from 'next/head';
 import 'react-toastify/dist/ReactToastify.css'
 import "regenerator-runtime/runtime";
-import Navbar from "../components/navbar/navbar"
-import { QueryClientProvider, QueryClient } from 'react-query'
-import {withUAL, UALProvider} from "ual-reactjs-renderer";
-import {Anchor} from "ual-anchor";
-import {Wax} from "@eosdacio/ual-wax";
-import config from '../config/config.json';
 import cb from 'classnames';
+import { QueryClientProvider, QueryClient } from 'react-query'
+import { withUAL, UALProvider } from "ual-reactjs-renderer";
+import { useRouter } from 'next/router'
+import { Anchor } from "ual-anchor";
+import { Wax } from "@eosdacio/ual-wax";
+
+import '../styles/globals.css'
+import Navbar from "../components/navbar/navbar"
+import config from '../config/config.json';
+import DashboardLayout from '../components/admin/dashboard/layout';
+
 export const queryClient = new QueryClient()
 
 const waxNet = {
@@ -20,7 +25,7 @@ const waxNet = {
 };
 
 const anchor = new Anchor([waxNet], {
-    appName: config.app_name
+  appName: config.app_name
 });
 
 const wax = new Wax([waxNet]);
@@ -28,27 +33,40 @@ const wax = new Wax([waxNet]);
 const wallets = [wax, anchor];
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
   const AppContainer = (props) => {
     return (
-      <div className={cb(
-        'fixed top-0 left-0 h-full w-full',
-      )}>
-        <Navbar {...props} />
-        <Component {...props} />
-      </div>
-    )
+      <>
+        <Head>
+          <title> GOLDMAND </title>
+        </Head>
+        {router.pathname.indexOf('/admin') !== -1 ? (
+          <>
+            <DashboardLayout>
+              <Component {...props} />
+            </DashboardLayout>
+          </>) : (
 
+          <div className={cb(
+            'fixed top-0 left-0 h-full w-full',
+          )}>{router.pathname.indexOf('/superLogin') === -1 &&
+            <Navbar {...props} />}
+            <Component {...props} />
+          </div>
+        )}
+      </>
+    )
   }
 
   const AppWithUAL = withUAL(AppContainer);
 
   return (
-      <UALProvider chains={[waxNet]} authenticators={wallets} appName={config.app_name}>
-        <QueryClientProvider client={queryClient}>
-          <AppWithUAL {...pageProps} />
-        </QueryClientProvider>
-      </UALProvider>
-    );
+    <UALProvider chains={[waxNet]} authenticators={wallets} appName={config.app_name}>
+      <QueryClientProvider client={queryClient}>
+        <AppWithUAL {...pageProps} />
+      </QueryClientProvider>
+    </UALProvider>
+  );
 }
 
 export default MyApp

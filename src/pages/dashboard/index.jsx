@@ -17,7 +17,7 @@ const Dashboard = (props) => {
       <Header {...props} />
 
       {/* dashboard content */}
-      <div className="tab_content overflow-y-auto">
+      <div className="tab_content h-content overflow-y-auto">
         <DashboardContent />
       </div>
 

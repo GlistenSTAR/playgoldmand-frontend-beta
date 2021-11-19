@@ -17,3 +17,6 @@ export const fetchCheckRegister = data => {
 export const fetchUserProfile = () => {
   return Axios.get(endpointUrl('auth/getprofile'))
 }
+export const fetchGetUsers = () => {
+  return Axios.get(endpointUrl('user/get'))
+}
