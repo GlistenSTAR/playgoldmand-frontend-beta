@@ -2,13 +2,18 @@ import React from 'react'
 import cb from 'classnames'
 
 export default function Input(
-  { type, id, value, className, placeholder, checked, required, disabled, onChange : onChangeCallback}
+  {
+    type, id, value, className, placeholder, checked, required, disabled, onChange : onChangeCallback,
+    onKeyPress: onKeyPressCallback,
+  }
 ) {
 
   const onChange = (e) => {
     onChangeCallback(e)
   }
-
+  const onKeyPress = (e) => {
+    onKeyPressCallback && onKeyPressCallback(e)
+  }
   return (
     <input
       className={cb(
@@ -27,6 +32,7 @@ export default function Input(
       required={required}
       disabled={disabled}
       onChange={onChange}
+      onKeyPress={onKeyPress}
     />
   )
 }

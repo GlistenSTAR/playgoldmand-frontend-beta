@@ -288,3 +288,38 @@ input:checked + .slider .Currency {
 .bottom-navigation {
   background: #02000B;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3d3c3a;
+  width: 50%;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f3f0ed;
+  height: 50px;
+  width: 50px;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #969390;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

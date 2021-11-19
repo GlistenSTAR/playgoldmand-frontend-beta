@@ -19,7 +19,7 @@ const Inventory = (props) => {
 
       {/* dashboard content */}
       <div className="tab_content h-content overflow-y-auto">
-        <InventoryContent />
+        <InventoryContent {...props} />
       </div>
 
       {/* dashboard footer */}
