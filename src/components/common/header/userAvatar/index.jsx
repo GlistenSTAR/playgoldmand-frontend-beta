@@ -9,6 +9,7 @@ const UserAvatar = (props) => {
   return (
     <div className={cb(
       'flex column',
+      'header-user',
       'pl-10'
     )}>
       <div className={cb(
@@ -17,7 +18,7 @@ const UserAvatar = (props) => {
         'flex column'
       )}>
         <Image
-          src={'/img/avatars/person.png'}
+          src={'/img/avatars/person.jpg'}
           alt="useravart"
           width="90"
           height="90"
@@ -27,10 +28,10 @@ const UserAvatar = (props) => {
         />
         <div className={cb(
           'absolute -bottom-2 -right-3 rounded-full border-white border-2',
-          'w-10 h-10 bg-black bg-opacity-75'
+          'w-10 h-10 bg-black bg-opacity-75 race-icon'
         )}>
           <Image
-            src={'/img/icons/strangth.png'}
+            src={'/img/icons/human-icon.svg'}
             width="42"
             height="42"
             alt="kind"
@@ -46,14 +47,14 @@ const UserAvatar = (props) => {
             'flex flex-row justify-start',
           )}>
             <div className="w-1/2">
-              <p className="text-lg">Bastam</p>
-              <p className="text-sm">{accountName}</p>
+              <h3 className="username">Bastam</h3>
+              <p className="wallet-name">{accountName}</p>
             </div>
             <div className="w-1/2 flex justify-end items-center pr-2">
               <Image
-                src={'/img/icons/logout.png'}
+                src={'/img/icons/logout.svg'}
                 width="32"
-                height="21"
+                height="20"
                 alt="logout"
                 className="cursor-pointer"
               />
@@ -63,7 +64,7 @@ const UserAvatar = (props) => {
         </div>
         <div
           className={cb(
-            'mt-2 ml-4 text-white text-sm',
+            'mt-1 ml-4 land-name',
             'flex justify-left'
           )}>
           Mountain fields

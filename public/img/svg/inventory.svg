@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="28px" viewBox="0 0 34 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
+    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mining-hub-new-user" transform="translate(-75.000000, -908.000000)" fill="#58E59C">
+            <g id="nav" transform="translate(1.000000, 881.000000)">
+                <g id="Group-2" transform="translate(74.000000, 18.000000)">
+                    <g id="Group-4" transform="translate(0.000000, 9.000000)">
+                        <path d="M5.1,17.85 L5.1,6.8 L2.55,6.8 C1.14165625,6.8 0,7.94165625 0,9.35 L0,24.65 C0,26.0583437 1.14165625,27.2 2.55,27.2 L24.65,27.2 C26.0583437,27.2 27.2,26.0583437 27.2,24.65 L27.2,22.1 L9.35,22.1 C7.00665625,22.1 5.1,20.1933438 5.1,17.85 Z M31.45,3.4 L21.25,3.4 L17.85,0 L9.35,0 C7.94165625,0 6.8,1.14165625 6.8,2.55 L6.8,17.85 C6.8,19.2583437 7.94165625,20.4 9.35,20.4 L31.45,20.4 C32.8583437,20.4 34,19.2583437 34,17.85 L34,5.95 C34,4.54165625 32.8583437,3.4 31.45,3.4 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

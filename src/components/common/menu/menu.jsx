@@ -26,9 +26,9 @@ const links = [{
 const Menu = () => {
   return (
     <div className={cb(
-      'absolute bottom-0 bg-gray-900',
+      'absolute bottom-0 ',
       'h-20 w-full p-2',
-      'flex justify-center items-center overflow-y-hidden overflow-x-auto',
+      'flex justify-center items-center overflow-y-hidden overflow-x-auto bottom-navigation',
     )}>
       {links.map((link, idx) => <div key={idx} className="m-1">
         <MenuItem text={link.text} href={link.href} imageUrl={link.imageUrl} />

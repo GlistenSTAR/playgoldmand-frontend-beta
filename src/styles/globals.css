@@ -6,8 +6,14 @@
 @layer utilities {
   @variants responsive {
     .text-shadow {
-      text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff,
-        1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+      font-size: 28px;
+      color: #F68D38;
+      letter-spacing: 1.3px;
+      text-align: center;
+      z-index: 1;
+      position: relative;
+      /* text-shadow: 4px 0 0 #fff, -4px 0 0 #fff, 0 4px 0 #fff, 0 -4px 0 #fff,
+      2px 2px #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff; */
     }
     .text-shadow-md {
       text-shadow: 4px 0 0 #fff, -4px 0 0 #fff, 0 4px 0 #fff, 0 -4px 0 #fff,
@@ -23,15 +29,54 @@
   }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 @font-face {
+  font-family: 'Futura';
+  src: url('/font/Futura-MediumItalic.eot');
+  src: url('/font/Futura-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('/font/Futura-MediumItalic.woff2') format('woff2'),
+      url('/font/Futura-MediumItalic.woff') format('woff'),
+      url('/font/Futura-MediumItalic.ttf') format('truetype'),
+      url('/font/Futura-MediumItalic.svg#Futura-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('/font/Futura-Medium.eot');
+  src: url('/font/Futura-Medium.eot?#iefix') format('embedded-opentype'),
+      url('/font/Futura-Medium.woff2') format('woff2'),
+      url('/font/Futura-Medium.woff') format('woff'),
+      url('/font/Futura-Medium.ttf') format('truetype'),
+      url('/font/Futura-Medium.svg#Futura-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('/font/Futura-Bold.eot');
+  src: url('/font/Futura-Bold.eot?#iefix') format('embedded-opentype'),
+      url('/font/Futura-Bold.woff2') format('woff2'),
+      url('/font/Futura-Bold.woff') format('woff'),
+      url('/font/Futura-Bold.ttf') format('truetype'),
+      url('/font/Futura-Bold.svg#Futura-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1, h2, h3, h4, h5, h6, .futura {
   font-family: "futura";
-  font-weight: 400;
-  src: url("/font/Futura.ttc");
 }
 
 body {
-  font-family: "futura";
-  background: url("/img/landscape.png") no-repeat center center fixed;
+  font-family: 'Montserrat', sans-serif;
+  background: #02000B url("/img/main-background.jpg") no-repeat center center fixed;
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -186,4 +231,60 @@ input:checked + .slider .Currency {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.bg-gray-900 {
+  background-color: rgba(0, 0, 0, 0.39);
+}
+
+.border-gray-400 {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+}
+
+.header {
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.header-left--box {
+  padding: 0 24px;
+}/* header-left--box */
+
+.wallet-name {
+  font-weight: 500;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0.14px;
+}
+
+.username {
+  color: #FFFFFF;
+  font-family: 'Futura';
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 0.23px;
+  text-shadow: 0 2px 1px rgba(0,0,0,0.65);
+}
+
+.land-name {
+  font-weight: 600;
+  font-size: 15px;
+  color: #FFFFFF;
+  letter-spacing: 0.17px;
+  text-shadow: 0 2px 1px rgba(0,0,0,0.65);
+}
+
+.race-icon {
+  padding: 3px;
+}
+
+.bottom-navigation {
+  background: #02000B;
 }

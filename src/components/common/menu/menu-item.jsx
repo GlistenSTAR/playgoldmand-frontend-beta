@@ -20,7 +20,7 @@ export default function MenuItem(
     )}>
       <Link href={href} className="opacity-100 flex items-center" data-toggle="tab">
           <Image 
-              src={active? `/img/svg/${imageUrl}_active.png` : `/img/svg/${imageUrl}.png`}
+              src={active? `/img/svg/${imageUrl}_active.svg` : `/img/svg/${imageUrl}.svg`}
               width="30"
               height="30"
               alt="menu_icon"
