@@ -31,9 +31,8 @@ export const setLandAction = async (activeUser, asset) => {
               permission: activeUser['requestPermission'],
           }],
           data: {
-              referrer: config.app_name,
-              asset_id: asset.assetId,
-              claimer: userName
+              name: userName,
+              land: asset.assetId
           }
       }]
   }, {
@@ -53,9 +52,9 @@ export const registerAction = async (activeUser, accountName, asset) => {
               permission: activeUser['requestPermission'],
           }],
           data: {
-              referrer: config.app_name,
-              race: asset.assetId,
-              claimer: userName
+              account: userName,
+              username: accountName,
+              race: asset.assetId
           }
       }]
   }, {
