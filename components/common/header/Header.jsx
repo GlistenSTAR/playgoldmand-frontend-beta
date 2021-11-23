@@ -1,7 +1,6 @@
 import cb from 'classnames';
 import { useRouter } from 'next/router'
 import UserAvartar from './userAvatar'
-import Setting from './setting'
 import MineTime from './mineTime'
 import Status from './status'
 

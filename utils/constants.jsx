@@ -1,4 +1,6 @@
-export const baseApiUrl = 'http://localhost:3001/'
+const dev = process.env.NODE_ENV !== 'production'
+
+export const baseApiUrl = dev ? 'http://localhost:3001/' : 'http://dev.goldmand.io:8081/'
 
 export const tokenKey = 'gmd_auth_token'
 

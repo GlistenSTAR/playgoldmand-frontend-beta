@@ -9,7 +9,6 @@ import { Anchor } from "ual-anchor";
 import { Wax } from "@eosdacio/ual-wax";
 
 import '../styles/globals.css'
-import Navbar from "../components/navbar/navbar"
 import config from '../config/config.json';
 import DashboardLayout from '../components/admin/dashboard/layout';
 
@@ -49,8 +48,7 @@ function MyApp({ Component, pageProps }) {
 
           <div className={cb(
             'fixed top-0 left-0 h-full w-full',
-          )}>{router.pathname.indexOf('/superLogin') === -1 &&
-            <Navbar {...props} />}
+          )}>
             <Component {...props} />
           </div>
         )}

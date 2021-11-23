@@ -1,11 +1,19 @@
 import Image from 'next/image'
 import cb from 'classnames'
+import { useRouter } from 'next/router'
 import Setting from '../setting';
+import Button from '../../input/Button';
 
 const UserAvatar = (props) => {
+  const router = useRouter();
   const ual = props['ual'] ? props['ual'] : { 'activeUser': null };
   const activeUser = ual['activeUser'];
   const accountName = activeUser ? activeUser['accountName'] : null;
+
+  const logout = () => {
+    ual.logout();
+    router.push('/')
+  }
   return (
     <div className={cb(
       'flex column',
@@ -50,7 +58,10 @@ const UserAvatar = (props) => {
               <h3 className="username">Bastam</h3>
               <p className="wallet-name">{accountName}</p>
             </div>
-            <div className="w-1/2 flex justify-end items-center pr-2">
+            <Button
+              className="w-1/2 flex justify-end items-center pr-2"
+              onClick={logout}
+            >
               <Image
                 src={'/img/icons/logout.svg'}
                 width="32"
@@ -58,7 +69,7 @@ const UserAvatar = (props) => {
                 alt="logout"
                 className="cursor-pointer"
               />
-            </div>
+            </Button>
           </div>
           <Setting />
         </div>
