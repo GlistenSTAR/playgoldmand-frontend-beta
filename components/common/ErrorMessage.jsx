@@ -13,8 +13,8 @@ function ErrorMessage(props) {
                 'flex flex-row left-error overflow-y-auto',
                 'bg-red-500 bg-opacity-90 w-2/3',
                 'border-2 border-solid rounded-2xl border-red-900',
-                {'z-30' : error},
-                {'z-0' : !error},
+                { 'z-30': error },
+                { 'z-0': !error },
             )}
         >
             <div className="m-auto">

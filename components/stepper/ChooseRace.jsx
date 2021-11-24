@@ -1,9 +1,13 @@
-import {useState} from 'react'
+import { useState } from 'react'
 import Image from 'next/image'
 import cb from 'classnames'
 
 const ChooseRace = ({selected, setSelected}) => {
   const [show, setShow] = useState(false);
+<<<<<<< HEAD:components/stepper/ChooseRace.jsx
+=======
+  const [selectNum, setSelectNum] = useState(0);
+>>>>>>> 6a7afd9a1bcf43f7cb404a0fc332063faa4db5a0:components/stepper/ChooseRace.tsx
 
   return (
     <div className={cb('w-full')}>
@@ -20,20 +24,36 @@ const ChooseRace = ({selected, setSelected}) => {
         'mt-4'
       )}>
         <div className={cb(
+<<<<<<< HEAD:components/stepper/ChooseRace.jsx
             'card_box transition transform ease-in-out duration-300',
             'w-full md:w-auto'
           )} 
           onMouseEnter={()=>setShow(true)}
           onMouseLeave={()=>setShow(false)}
           onClick={() => setSelected(1)}
+=======
+          'card_box transition transform ease-in-out duration-300',
+          'w-full md:w-auto'
+        )}
+          onMouseEnter={() => setShow(true)}
+          onMouseLeave={() => setShow(false)}
+          onClick={() => setSelectNum(1)}
+>>>>>>> 6a7afd9a1bcf43f7cb404a0fc332063faa4db5a0:components/stepper/ChooseRace.tsx
         >
           <div className={cb(
             'rounded-lg mx-10 pt-3.5 pb-5 px-5',
             'bg-none hover:bg-green-400',
+<<<<<<< HEAD:components/stepper/ChooseRace.jsx
             selected===1?'bg-green-400':''
           )}>
             <Image 
               src={'/img/race.png'}
+=======
+            selectNum === 1 ? 'bg-green-400' : ''
+          )}>
+            <Image
+              src={require('../../assets/img/race.png')}
+>>>>>>> 6a7afd9a1bcf43f7cb404a0fc332063faa4db5a0:components/stepper/ChooseRace.tsx
               alt="item"
               width="270"
               height="400"
@@ -42,19 +62,34 @@ const ChooseRace = ({selected, setSelected}) => {
           <p className="mt-2 text-lg">ALF&apos;S</p>
         </div>
         <div className={cb(
+<<<<<<< HEAD:components/stepper/ChooseRace.jsx
             'card_box transition transform ease-in-out duration-300'
           )} 
           onMouseEnter={()=>setShow(true)}
           onMouseLeave={()=>setShow(false)}
           onClick={() => setSelected(2)}
+=======
+          'card_box transition transform ease-in-out duration-300'
+        )}
+          onMouseEnter={() => setShow(true)}
+          onMouseLeave={() => setShow(false)}
+          onClick={() => setSelectNum(2)}
+>>>>>>> 6a7afd9a1bcf43f7cb404a0fc332063faa4db5a0:components/stepper/ChooseRace.tsx
         >
           <div className={cb(
             'rounded-lg mx-10 pt-3.5 pb-5 px-5',
             'bg-none hover:bg-green-400',
+<<<<<<< HEAD:components/stepper/ChooseRace.jsx
             selected===2?'bg-green-400':''
           )}>
             <Image 
               src={'/img/race.png'}
+=======
+            selectNum === 2 ? 'bg-green-400' : ''
+          )}>
+            <Image
+              src={require('../../assets/img/race.png')}
+>>>>>>> 6a7afd9a1bcf43f7cb404a0fc332063faa4db5a0:components/stepper/ChooseRace.tsx
               alt="item"
               width="270"
               height="400"
@@ -63,19 +98,34 @@ const ChooseRace = ({selected, setSelected}) => {
           <p className="mt-2 text-lg">PEOPLES</p>
         </div>
         <div className={cb(
+<<<<<<< HEAD:components/stepper/ChooseRace.jsx
             'card_box transition transform ease-in-out duration-300'
           )} 
           onMouseEnter={()=>setShow(true)}
           onMouseLeave={()=>setShow(false)}
           onClick={() => setSelected(3)}
+=======
+          'card_box transition transform ease-in-out duration-300'
+        )}
+          onMouseEnter={() => setShow(true)}
+          onMouseLeave={() => setShow(false)}
+          onClick={() => setSelectNum(3)}
+>>>>>>> 6a7afd9a1bcf43f7cb404a0fc332063faa4db5a0:components/stepper/ChooseRace.tsx
         >
           <div className={cb(
             'rounded-lg mx-10 pt-3.5 pb-5 px-5',
             'bg-none hover:bg-green-400',
+<<<<<<< HEAD:components/stepper/ChooseRace.jsx
             selected===3?'bg-green-400':''
           )}>
             <Image 
               src={'/img/race.png'}
+=======
+            selectNum === 3 ? 'bg-green-400' : ''
+          )}>
+            <Image
+              src={require('../../assets/img/race.png')}
+>>>>>>> 6a7afd9a1bcf43f7cb404a0fc332063faa4db5a0:components/stepper/ChooseRace.tsx
               alt="item"
               width="270"
               height="400"
@@ -86,13 +136,13 @@ const ChooseRace = ({selected, setSelected}) => {
       </div>
 
       <div className={cb('relative text-center text-white mt-20 mb-4')}>
-      {
-        show?(
+        {
+          show ? (
             <p className="description absolute left-0 bottom-0 px-20 sm:px-4">
               Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
-        ):''
-      }
+          ) : ''
+        }
       </div>
     </div>
   );
